@@ -1,5 +1,6 @@
 package com.softwareChaser.springboot.Model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,34 +8,40 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+
+
 @Entity
 @Table(name = "Answer")
 public class Answer {
 	
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int Qid;
+	private int Aid;
 	
-	
-	private String ans;
+	@Column(name = "correct_answers")
+	private String correct_answers;
 
+	@JsonBackReference
 	@OneToOne(mappedBy="answer")
 	private Question question;
 
-	public int getQid() {
-		return Qid;
+	public int getAid() {
+		return Aid;
 	}
 
-	public void setQid(int qid) {
-		Qid = qid;
+	public void setAid(int aid) {
+		Aid = aid;
 	}
 
-	public String getAns() {
-		return ans;
+	public String getCorrect_answers() {
+		return correct_answers;
 	}
 
-	public void setAns(String ans) {
-		this.ans = ans;
+	public void setCorrect_answers(String correct_answers) {
+		this.correct_answers = correct_answers;
 	}
 
 	public Question getQuestion() {
@@ -44,19 +51,22 @@ public class Answer {
 	public void setQuestion(Question question) {
 		this.question = question;
 	}
-	
+
+	public Answer(int aid, String correct_answers, Question question) {
+		super();
+		Aid = aid;
+		this.correct_answers = correct_answers;
+		this.question = question;
+	}
 
 	public Answer() {
 		super();
 	}
 
-	public Answer(int qid, String ans, Question question) {
-		super();
-		Qid = qid;
-		this.ans = ans;
-		this.question = question;
+	@Override
+	public String toString() {
+		return "Answer [Aid=" + Aid + ", correct_answers=" + correct_answers + ", question=" + question + "]";
 	}
-	
-	
 
+	
 }

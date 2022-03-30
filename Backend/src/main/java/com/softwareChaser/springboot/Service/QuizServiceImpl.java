@@ -29,11 +29,12 @@ public class QuizServiceImpl implements QuizService{
 
 
 
-	
-	public List<Question> FindBySubjectAndLevel(Subject subject, Level level) {
-		// TODO Auto-generated method stub
-		return Qrepo.findBySubjectAndLevel(subject, level);
-	}
+
+//	@Override
+//	public List<Question> findBySubjectAndLevel(Subject subject, String level) {
+//		// TODO Auto-generated method stub
+//		return Qrepo.findBySubjectAndLevel(subject, level);
+//		}
 
 	
 

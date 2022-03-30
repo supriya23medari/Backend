@@ -2,11 +2,9 @@ package com.softwareChaser.springboot.Service;
 
 import java.util.List;
 
-import javax.security.auth.Subject;
 
 import com.softwareChaser.springboot.Model.Question;
 
-import ch.qos.logback.classic.Level;
 
 
 public interface QuizService {
@@ -19,9 +17,9 @@ public interface QuizService {
 	public Question saveQuestions(Question question);
 
 
+//	public List<Question> findBySubjectAndLevel(Subject subject, String level);
 
 
-	public List<Question> FindBySubjectAndLevel(Subject subject, Level level);
 
 
 }

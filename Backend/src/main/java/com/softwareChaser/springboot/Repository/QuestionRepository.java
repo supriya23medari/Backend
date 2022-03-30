@@ -9,13 +9,12 @@ import org.springframework.stereotype.Repository;
 
 import com.softwareChaser.springboot.Model.Question;
 
-import ch.qos.logback.classic.Level;
 
 
 
 @Repository
 public interface QuestionRepository extends JpaRepository<Question,Long> {
 	
-
-	public List<Question> findBySubjectAndLevel(Subject subject, Level level);
-}
+//
+//	public  List<Question> findBySubjectAndLevel(Subject subject, String level);
+	}

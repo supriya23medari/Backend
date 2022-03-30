@@ -1,8 +1,11 @@
 package com.softwareChaser.springboot.Model;
 
 
+import java.util.List;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,7 +13,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+
+
 @Entity
 @Table(name="Question")
 public class Question {
@@ -19,29 +25,20 @@ public class Question {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long Qid;
 	
-	@Column(name = "Subject")
-	private String Subject;
+	@Column(name = "category")
+	private String Category;
 	
-	@Column(name = "Level")
-	private String Level;
+	@Column(name = "difficulty")
+	private String Difficulty;
 	
-	@Column(name = "Qtitle")
-	private String Qtitle;
+	@Column(name = "question")
+	private String Question;
 	
-	@Column(name = "Option_A")
-	private String Option_A;
-	
-	@Column(name = "Option_B")
-	private String Option_B;
-
-	@Column(name = "Option_C")
-	private String Option_C;
-	
-	@Column(name = "Option_D")
-	private String Option_D;
-	
-	
-	@JsonIgnore
+	@ElementCollection
+	@Column(name = "incorrect_answers")
+	private List<String> incorrect_answers;
+	//to hide answer we wil use jspon back reference
+	//@JsonBackReference 
 	@OneToOne(cascade = CascadeType.ALL)
 	private Answer answer;
 
@@ -53,63 +50,38 @@ public class Question {
 		Qid = qid;
 	}
 
-	public String getSubject() {
-		return Subject;
+	public String getCategory() {
+		return Category;
 	}
 
-	public void setSubject(String subject) {
-		Subject = subject;
+	public void setCategory(String category) {
+		Category = category;
 	}
 
-	public String getLevel() {
-		return Level;
+	public String getDifficulty() {
+		return Difficulty;
 	}
 
-	public void setLevel(String level) {
-		Level = level;
+	public void setDifficulty(String difficulty) {
+		Difficulty = difficulty;
 	}
 
-	public String getQtitle() {
-		return Qtitle;
+	public String getQuestion() {
+		return Question;
 	}
 
-	public void setQtitle(String qtitle) {
-		Qtitle = qtitle;
+	public void setQuestion(String question) {
+		Question = question;
 	}
 
-	public String getOption_A() {
-		return Option_A;
+	public List<String> getIncorrect_answers() {
+		return incorrect_answers;
 	}
 
-	public void setOption_A(String option_A) {
-		Option_A = option_A;
+	public void setIncorrect_answers(List<String> incorrect_answers) {
+		this.incorrect_answers = incorrect_answers;
 	}
 
-	public String getOption_B() {
-		return Option_B;
-	}
-
-	public void setOption_B(String option_B) {
-		Option_B = option_B;
-	}
-
-	public String getOption_C() {
-		return Option_C;
-	}
-
-	public void setOption_C(String option_C) {
-		Option_C = option_C;
-	}
-
-	public String getOption_D() {
-		return Option_D;
-	}
-
-	public void setOption_D(String option_D) {
-		Option_D = option_D;
-	}
-
-	
 	public Answer getAnswer() {
 		return answer;
 	}
@@ -122,28 +94,22 @@ public class Question {
 		super();
 	}
 
-	public Question(Long qid, String subject, String level, String qtitle, String option_A, String option_B,
-			String option_C, String option_D, String choose, Answer answer) {
+	public Question(Long qid, String category, String difficulty, String question, List<String> incorrect_answers,
+			Answer answer) {
 		super();
 		Qid = qid;
-		Subject = subject;
-		Level = level;
-		Qtitle = qtitle;
-		Option_A = option_A;
-		Option_B = option_B;
-		Option_C = option_C;
-		Option_D = option_D;
+		Category = category;
+		Difficulty = difficulty;
+		Question = question;
+		this.incorrect_answers = incorrect_answers;
 		this.answer = answer;
 	}
 
 	@Override
 	public String toString() {
-		return "Question [Qid=" + Qid + ", Subject=" + Subject + ", Level=" + Level + ", Qtitle=" + Qtitle
-				+ ", Option_A=" + Option_A + ", Option_B=" + Option_B + ", Option_C=" + Option_C + ", Option_D="
-				+ Option_D + ", answer=" + answer + "]";
+		return "Question [Qid=" + Qid + ", Category=" + Category + ", Difficulty=" + Difficulty + ", Question="
+				+ Question + ", incorrect_answers=" + incorrect_answers + ", answer=" + answer + "]";
 	}
 
 	
-	
-
 }

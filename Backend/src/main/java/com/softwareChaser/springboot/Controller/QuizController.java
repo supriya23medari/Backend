@@ -40,9 +40,10 @@ public class QuizController {
 	        return Qservice.getQuestions();
 	}
 	
-	@GetMapping("/quiz/subjectandlevel")
-	public List<Question> findBySubjectAndLevel(@PathVariable("Subject") Subject subject,@PathVariable("Level") Level level) {
-		return Qservice.FindBySubjectAndLevel(subject,level);
-	} 
+//	@GetMapping("/quiz/subjectandlevel")
+//	public  List<Question> findBySubjectAndLevel(Subject subject, String level){
+//		return Qservice.findBySubjectAndLevel(subject,level);
+//		
+//	}
 	
 }
