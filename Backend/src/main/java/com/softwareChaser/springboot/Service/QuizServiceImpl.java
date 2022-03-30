@@ -26,9 +26,7 @@ public class QuizServiceImpl implements QuizService{
 	public List<Question> getQuestions() {
 		return Qrepo.findAll();
 	}
-
-
-
+	
 
 //	@Override
 //	public List<Question> findBySubjectAndLevel(Subject subject, String level) {

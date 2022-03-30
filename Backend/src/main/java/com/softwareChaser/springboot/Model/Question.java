@@ -37,7 +37,7 @@ public class Question {
 	@ElementCollection
 	@Column(name = "incorrect_answers")
 	private List<String> incorrect_answers;
-	//to hide answer we wil use jspon back reference
+	//to hide answer we wil use jsponbackreference
 	//@JsonBackReference 
 	@OneToOne(cascade = CascadeType.ALL)
 	private Answer answer;
