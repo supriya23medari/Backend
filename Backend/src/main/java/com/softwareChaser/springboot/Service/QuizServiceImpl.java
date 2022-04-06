@@ -2,11 +2,13 @@ package com.softwareChaser.springboot.Service;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.softwareChaser.springboot.Model.Question;
 import com.softwareChaser.springboot.Repository.QuestionRepository;
+
 
 @Service
 public class QuizServiceImpl implements QuizService{
@@ -22,27 +24,21 @@ public class QuizServiceImpl implements QuizService{
 		return Qrepo.findAll();
 	}
 
-
-	public List<Question> fetchByCategory(String Category) {
-		// TODO Auto-generated method stub
-	   return Qrepo.findByCategory(Category);
-	}
-
-	
-
-	public List<Question> fetchByCategoryAndDifficulty(String Category, String Difficulty) {
-		// TODO Auto-generated method stub
-		return Qrepo.findByCategoryAndDifficulty(Category,Difficulty); 
-	}
-
 	@Override
-	public List<Question> fetchByDifficulty(String Difficulty) {
+	public List <Question> findByCategoryAndDifficulty(String Category, String Difficulty) {
 		// TODO Auto-generated method stub
-		return Qrepo.findByDifficulty(Difficulty);
+		return Qrepo.findByCategoryAndDifficulty(Category,Difficulty);
 	}
 	
 
+//	@Override
+//	public List<Question> findBySubjectAndLevel(Subject subject, String level) {
+//		// TODO Auto-generated method stub
+//		return Qrepo.findBySubjectAndLevel(subject, level);
+//		}
 
-		
+	
+
+	
 
 }

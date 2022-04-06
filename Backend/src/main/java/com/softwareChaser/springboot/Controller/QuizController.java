@@ -6,9 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -31,36 +29,28 @@ public class QuizController {
 		return "hello";
 	}
 
-	@PostMapping("/quiz")
+	@PostMapping("/questions")
 	public ResponseEntity<Question> SaveQuestions(@RequestBody Question question) {
 	
-		return new ResponseEntity<>(Qservice.saveQuestions(question),HttpStatus.OK);
+		return new ResponseEntity<>(Qservice.saveQuestions(question),HttpStatus.CREATED);
 	}
 	
-	@GetMapping("/quiz")
-	public ResponseEntity<List <Question>> getQuestions() {
+	@GetMapping("/questions")
+	public ResponseEntity<List <Question> >getQuestions() {
 	        return new ResponseEntity<>(Qservice.getQuestions(),HttpStatus.OK);
 	}
 	
-	@GetMapping("/quiz/Category/{Category}")
-	public ResponseEntity<List<Question>> fetchByCategory(@PathVariable("Category") String Category)
-	{
-		return new ResponseEntity<>(Qservice.fetchByCategory(Category),HttpStatus.OK);
-	}	
-
-	@GetMapping("/quiz/Difficulty/{Difficulty}")
-	public ResponseEntity<List<Question>> fetchByDifficulty(@PathVariable("Difficulty") String Difficulty)
-	{
-		return new ResponseEntity<>(Qservice.fetchByDifficulty(Difficulty),HttpStatus.OK);
-	}	
-	
-    @CrossOrigin(origins="http://localhost:3000/")
-	@GetMapping("/quiz/CategoryAndDifficulty") 
-	public ResponseEntity<List<Question>> fetchByCategoryAndDifficulty(@RequestParam String Category,@RequestParam String Difficulty) 
-	{ 
-		return new ResponseEntity<>(Qservice.fetchByCategoryAndDifficulty(Category, Difficulty),HttpStatus.OK); 
+	@GetMapping("/quiz/{Category}/{difficulty}")
+	public ResponseEntity< List <Question> >findByCategoryAndDifficulty(@RequestParam("Category") String Category,@RequestParam("Difficulty") String Difficulty){
+		
+		return new ResponseEntity<>(Qservice.findByCategoryAndDifficulty(Category,Difficulty),HttpStatus.OK);
+		
 	}
-	 
 
+//	public  List<Question> findBySubjectAndLevel(Subject subject, String level){
+//		return Qservice.findBySubjectAndLevel(subject,level);
+//		
+//	}
+	
 
 }
