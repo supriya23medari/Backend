@@ -2,22 +2,17 @@ package com.softwareChaser.springboot.Controller;
 
 import java.util.List;
 
-import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.softwareChaser.springboot.Error.QuizNotFoundException;
 import com.softwareChaser.springboot.Model.Question;
-import com.softwareChaser.springboot.Model.Result;
 import com.softwareChaser.springboot.Service.QuizService;
 
 
@@ -25,7 +20,6 @@ import com.softwareChaser.springboot.Service.QuizService;
 public class QuizController {
 	
 
-//	private final Logger LOGGER=LoggerFactory.getLogger(name:QuizController.class);
 	
 	@Autowired
 	private QuizService Qservice;
@@ -35,59 +29,28 @@ public class QuizController {
 		return "hello";
 	}
 
-	@PostMapping("/quiz")
-	public ResponseEntity<Question> SaveQuestions(@Valid@RequestBody Question question) {
+	@PostMapping("/questions")
+	public ResponseEntity<Question> SaveQuestions(@RequestBody Question question) {
 	
-		return new ResponseEntity<>(Qservice.saveQuestions(question),HttpStatus.OK);
+		return new ResponseEntity<>(Qservice.saveQuestions(question),HttpStatus.CREATED);
 	}
 	
-	@PostMapping("/result")
-	public ResponseEntity<Result> SaveResult(@RequestBody Result result) {
-	
-		return new ResponseEntity<>(Qservice.saveResults(result),HttpStatus.OK);
+	@GetMapping("/questions")
+	public ResponseEntity<List <Question> >getQuestions() {
+	        return new ResponseEntity<>(Qservice.getQuestions(),HttpStatus.OK);
 	}
 	
-	@GetMapping("/result")
-	public ResponseEntity<List <Result>> getResults() {
+	@GetMapping("/quiz/{Category}/{difficulty}")
+	public ResponseEntity< List <Question> >findByCategoryAndDifficulty(@RequestParam("Category") String Category,@RequestParam("Difficulty") String Difficulty){
 		
-			
-			return new ResponseEntity<>(Qservice.getResults(),HttpStatus.OK);
-	        
-	}
-	
-	@GetMapping("/quiz")
-	public ResponseEntity<List <Question>> getQuestions() {
+		return new ResponseEntity<>(Qservice.findByCategoryAndDifficulty(Category,Difficulty),HttpStatus.OK);
 		
-			
-			return new ResponseEntity<>(Qservice.getQuestions(),HttpStatus.OK);
-	        
 	}
-	
-	@GetMapping("/quiz/{id}")
-	public ResponseEntity<Question> fetchByQid(@PathVariable("id") Long Qid) throws QuizNotFoundException
-	{
-		return new ResponseEntity<>(Qservice.fetchByQid(Qid),HttpStatus.OK);
-	}	
-	
-	@GetMapping("/quiz/Category/{Category}")
-	public ResponseEntity<List<Question>> fetchByCategory(@PathVariable("Category") String Category)
-	{
-		return new ResponseEntity<>(Qservice.fetchByCategory(Category),HttpStatus.OK);
-	}	
 
-	@GetMapping("/quiz/Difficulty/{Difficulty}")
-	public ResponseEntity<List<Question>> fetchByDifficulty(@PathVariable("Difficulty") String Difficulty)
-	{
-		return new ResponseEntity<>(Qservice.fetchByDifficulty(Difficulty),HttpStatus.OK);
-	}	
+//	public  List<Question> findBySubjectAndLevel(Subject subject, String level){
+//		return Qservice.findBySubjectAndLevel(subject,level);
+//		
+//	}
 	
-    @CrossOrigin(origins="http://localhost:3000/")
-	@GetMapping("/quiz/CategoryAndDifficulty") 
-	public ResponseEntity<List<Question>> fetchByCategoryAndDifficulty(@RequestParam String Category,@RequestParam String Difficulty) 
-	{ 
-		return new ResponseEntity<>(Qservice.fetchByCategoryAndDifficulty(Category, Difficulty),HttpStatus.OK); 
-	}
-	 
-
 
 }
