@@ -3,9 +3,9 @@ package com.softwareChaser.springboot.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.softwareChaser.springboot.Model.Answer;
+import com.softwareChaser.springboot.Model.Result;
 
 @Repository
-public interface AnswerRepository extends JpaRepository<Answer,Long>{
+public interface ResultRepository extends JpaRepository<Result,Long> {
 
 }
