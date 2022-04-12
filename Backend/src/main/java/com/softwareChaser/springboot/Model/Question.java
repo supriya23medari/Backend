@@ -3,15 +3,16 @@ package com.softwareChaser.springboot.Model;
 
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+
+
 
 
 
@@ -25,10 +26,10 @@ public class Question {
 	private Long Qid;
 	
 	@Column(name = "category")
-	private String Category;
+	private String category;
 	
 	@Column(name = "difficulty")
-	private String Difficulty;
+	private String difficulty;
 	
 	@Column(name = "question")
 	private String Question;
@@ -36,10 +37,9 @@ public class Question {
 	@ElementCollection
 	@Column(name = "incorrect_answers")
 	private List<String> incorrect_answers;
-	//to hide answer we wil use jsponbackreference
-	//@JsonBackReference 
-	@OneToOne(cascade = CascadeType.ALL)
-	private Answer answer;
+	
+	@Column(name = "correct_answers")
+	private String correct_answers;
 
 	public Long getQid() {
 		return Qid;
@@ -50,19 +50,19 @@ public class Question {
 	}
 
 	public String getCategory() {
-		return Category;
+		return category;
 	}
 
 	public void setCategory(String category) {
-		Category = category;
+		this.category = category;
 	}
 
 	public String getDifficulty() {
-		return Difficulty;
+		return difficulty;
 	}
 
 	public void setDifficulty(String difficulty) {
-		Difficulty = difficulty;
+		this.difficulty = difficulty;
 	}
 
 	public String getQuestion() {
@@ -81,34 +81,34 @@ public class Question {
 		this.incorrect_answers = incorrect_answers;
 	}
 
-	public Answer getAnswer() {
-		return answer;
+	public String getCorrect_answers() {
+		return correct_answers;
 	}
 
-	public void setAnswer(Answer answer) {
-		this.answer = answer;
+	public void setCorrect_answers(String correct_answers) {
+		this.correct_answers = correct_answers;
+	}
+
+	public Question(Long qid, String category, String difficulty, String question, List<String> incorrect_answers,
+			String correct_answers) {
+		super();
+		Qid = qid;
+		this.category = category;
+		this.difficulty = difficulty;
+		Question = question;
+		this.incorrect_answers = incorrect_answers;
+		this.correct_answers = correct_answers;
 	}
 
 	public Question() {
 		super();
 	}
 
-	public Question(Long qid, String category, String difficulty, String question, List<String> incorrect_answers,
-			Answer answer) {
-		super();
-		Qid = qid;
-		Category = category;
-		Difficulty = difficulty;
-		Question = question;
-		this.incorrect_answers = incorrect_answers;
-		this.answer = answer;
-	}
-
 	@Override
 	public String toString() {
-		return "Question [Qid=" + Qid + ", Category=" + Category + ", Difficulty=" + Difficulty + ", Question="
-				+ Question + ", incorrect_answers=" + incorrect_answers + ", answer=" + answer + "]";
+		return "Question [Qid=" + Qid + ", Category=" + category + ", Difficulty=" + difficulty + ", Question="
+				+ Question + ", incorrect_answers=" + incorrect_answers + ", correct_answers=" + correct_answers + "]";
 	}
-
+	
 	
 }

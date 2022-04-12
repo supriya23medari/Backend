@@ -1,0 +1,794 @@
+2022-04-12 09:37:54,441 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 09:37:54,447 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-9 - Shutdown initiated...
+2022-04-12 09:37:54,456 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-9 - Shutdown completed.
+2022-04-12 09:37:54,535 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 23215 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 09:37:54,535 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 09:37:54,630 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 09:37:54,633 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-12 09:37:54,692 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 09:37:54,692 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 09:37:54,692 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 09:37:54,697 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 09:37:54,697 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 160 ms
+2022-04-12 09:37:54,723 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 09:37:54,726 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-10 - Starting...
+2022-04-12 09:37:54,738 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-10 - Start completed.
+2022-04-12 09:37:54,738 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 09:37:54,782 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 09:37:54,783 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 09:37:54,843 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 09:37:54,924 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 09:37:54,935 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 09:37:54,939 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 0.423 seconds (JVM running for 8616.145)
+2022-04-12 09:37:54,940 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged
+2022-04-12 09:55:37,154 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 09:55:37,154 [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-04-12 09:55:37,155 [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+2022-04-12 09:55:37,183 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 09:55:37,224 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/].[dispatcherServlet] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction] with root cause
+javax.validation.ConstraintViolationException: Validation failed for classes [com.softwareChaser.springboot.Model.Question] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Add category name', propertyPath=category, rootBeanClass=class com.softwareChaser.springboot.Model.Question, messageTemplate='Add category name'}
+	ConstraintViolationImpl{interpolatedMessage='Add question name', propertyPath=Question, rootBeanClass=class com.softwareChaser.springboot.Model.Question, messageTemplate='Add question name'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:140) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:80) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:214) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:100) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-5.3.17.jar:5.3.17]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.17.jar:5.3.17]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.17.jar:5.3.17]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.6.3.jar:2.6.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.17.jar:5.3.17]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.17.jar:5.3.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.17.jar:5.3.17]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.17.jar:5.3.17]
+	at jdk.proxy13/jdk.proxy13.$Proxy158.save(Unknown Source) ~[na:na]
+	at com.softwareChaser.springboot.Service.QuizServiceImpl.saveQuestions(QuizServiceImpl.java:32) ~[classes/:na]
+	at com.softwareChaser.springboot.Controller.QuizController.SaveQuestions(QuizController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+2022-04-12 09:55:49,388 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 09:55:49,391 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/].[dispatcherServlet] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction] with root cause
+javax.validation.ConstraintViolationException: Validation failed for classes [com.softwareChaser.springboot.Model.Question] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Add question name', propertyPath=Question, rootBeanClass=class com.softwareChaser.springboot.Model.Question, messageTemplate='Add question name'}
+	ConstraintViolationImpl{interpolatedMessage='Add category name', propertyPath=category, rootBeanClass=class com.softwareChaser.springboot.Model.Question, messageTemplate='Add category name'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:140) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:80) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:214) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:100) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.6.7.Final.jar:5.6.7.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-5.3.17.jar:5.3.17]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.17.jar:5.3.17]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.17.jar:5.3.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.17.jar:5.3.17]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.6.3.jar:2.6.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.17.jar:5.3.17]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.17.jar:5.3.17]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.17.jar:5.3.17]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.17.jar:5.3.17]
+	at jdk.proxy13/jdk.proxy13.$Proxy158.save(Unknown Source) ~[na:na]
+	at com.softwareChaser.springboot.Service.QuizServiceImpl.saveQuestions(QuizServiceImpl.java:32) ~[classes/:na]
+	at com.softwareChaser.springboot.Controller.QuizController.SaveQuestions(QuizController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+2022-04-12 09:56:54,216 [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested.
+2022-04-12 09:56:54,224 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 09:56:54,224 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-10 - Shutdown initiated...
+2022-04-12 09:56:54,229 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-10 - Shutdown completed.
+2022-04-12 09:56:55,597 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 36254 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 09:56:55,598 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 09:56:55,644 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-12 09:56:55,645 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-12 09:56:56,118 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 09:56:56,153 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2022-04-12 09:56:56,625 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 09:56:56,632 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 09:56:56,633 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 09:56:56,671 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 09:56:56,671 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1025 ms
+2022-04-12 09:56:56,767 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 09:56:56,802 [INFO] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-12 09:56:56,901 [INFO] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-12 09:56:56,962 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2022-04-12 09:56:57,155 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2022-04-12 09:56:57,166 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 09:56:57,618 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 09:56:57,623 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 09:56:57,894 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 09:56:58,128 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 09:56:58,154 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 09:56:58,163 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 2.846 seconds (JVM running for 3.418)
+2022-04-12 09:57:02,242 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 09:57:02,242 [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-04-12 09:57:02,243 [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+2022-04-12 09:57:02,322 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 09:57:02,375 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction] with root cause
+javax.validation.ConstraintViolationException: Validation failed for classes [com.softwareChaser.springboot.Model.Question] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Add question name', propertyPath=Question, rootBeanClass=class com.softwareChaser.springboot.Model.Question, messageTemplate='Add question name'}
+	ConstraintViolationImpl{interpolatedMessage='Add category name', propertyPath=category, rootBeanClass=class com.softwareChaser.springboot.Model.Question, messageTemplate='Add category name'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:140)
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:80)
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:214)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:100)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy111.save(Unknown Source)
+	at com.softwareChaser.springboot.Service.QuizServiceImpl.saveQuestions(QuizServiceImpl.java:32)
+	at com.softwareChaser.springboot.Controller.QuizController.SaveQuestions(QuizController.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-12 09:57:41,624 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 09:57:41,626 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2022-04-12 09:57:41,635 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2022-04-12 09:57:41,696 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 36254 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 09:57:41,696 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 09:57:41,807 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 09:57:41,812 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-04-12 09:57:41,884 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 09:57:41,884 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 09:57:41,884 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 09:57:41,890 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 09:57:41,890 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 192 ms
+2022-04-12 09:57:41,918 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 09:57:41,921 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Starting...
+2022-04-12 09:57:41,936 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Start completed.
+2022-04-12 09:57:41,936 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 09:57:41,984 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 09:57:41,984 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 09:57:42,044 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 09:57:42,115 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 09:57:42,126 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 09:57:42,131 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 0.46 seconds (JVM running for 47.386)
+2022-04-12 09:57:42,132 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged
+2022-04-12 09:57:49,534 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 09:57:49,535 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown initiated...
+2022-04-12 09:57:49,540 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown completed.
+2022-04-12 09:57:49,606 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 36254 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 09:57:49,606 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 09:57:49,713 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 09:57:49,718 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-04-12 09:57:49,777 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 09:57:49,778 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 09:57:49,778 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 09:57:49,785 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 09:57:49,785 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 177 ms
+2022-04-12 09:57:49,813 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 09:57:49,817 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Starting...
+2022-04-12 09:57:49,830 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Start completed.
+2022-04-12 09:57:49,831 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 09:57:49,877 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 09:57:49,878 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 09:57:49,949 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 09:57:50,035 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 09:57:50,045 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 09:57:50,049 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 0.468 seconds (JVM running for 55.304)
+2022-04-12 09:57:50,050 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged
+2022-04-12 09:57:55,510 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 09:57:55,510 [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-04-12 09:57:55,511 [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+2022-04-12 09:57:55,515 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:22:35,005 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:30:49,402 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:42:28,276 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:42:50,270 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:43:14,329 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:43:36,732 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:44:08,737 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:44:34,077 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:44:50,072 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:45:07,159 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:45:26,898 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:45:41,143 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:46:52,487 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:47:11,739 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:47:30,823 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:47:48,153 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:48:10,744 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:49:16,433 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:49:38,367 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:49:55,124 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:50:18,876 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:50:29,603 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:53:31,923 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:54:00,520 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:54:39,010 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:55:28,981 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:55:55,336 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:56:37,614 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 11:57:17,245 [ERROR] com.softwareChaser.springboot.Controller.QuizController questions saved
+2022-04-12 12:45:18,860 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 12:45:18,862 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Shutdown initiated...
+2022-04-12 12:45:18,876 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-3 - Shutdown completed.
+2022-04-12 12:45:18,947 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 36254 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 12:45:18,947 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 12:45:19,060 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 12:45:19,065 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-04-12 12:45:19,125 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 12:45:19,126 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 12:45:19,126 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 12:45:19,131 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 12:45:19,131 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 182 ms
+2022-04-12 12:45:19,157 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 12:45:19,160 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Starting...
+2022-04-12 12:45:19,172 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Start completed.
+2022-04-12 12:45:19,172 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 12:45:19,214 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 12:45:19,215 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 12:45:19,276 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 12:45:19,352 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 12:45:19,360 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 12:45:19,364 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 0.441 seconds (JVM running for 10052.109)
+2022-04-12 12:45:19,365 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged
+2022-04-12 12:50:39,380 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 12:50:39,382 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Shutdown initiated...
+2022-04-12 12:50:39,399 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-4 - Shutdown completed.
+2022-04-12 12:50:39,488 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 36254 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 12:50:39,488 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 12:50:39,584 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 12:50:39,588 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-04-12 12:50:39,649 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 12:50:39,650 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 12:50:39,650 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 12:50:39,655 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 12:50:39,655 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 165 ms
+2022-04-12 12:50:39,682 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 12:50:39,685 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-5 - Starting...
+2022-04-12 12:50:39,697 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-5 - Start completed.
+2022-04-12 12:50:39,698 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 12:50:39,738 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 12:50:39,738 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 12:50:39,797 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 12:50:39,875 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 12:50:39,882 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 12:50:39,886 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 0.426 seconds (JVM running for 10372.63)
+2022-04-12 12:50:39,887 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged
+2022-04-12 12:56:56,985 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 12:56:56,985 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-5 - Shutdown initiated...
+2022-04-12 12:56:56,989 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-5 - Shutdown completed.
+2022-04-12 12:56:57,059 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 36254 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 12:56:57,060 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 12:56:57,145 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 12:56:57,149 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-12 12:56:57,199 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 12:56:57,199 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 12:56:57,199 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 12:56:57,206 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 12:56:57,206 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 145 ms
+2022-04-12 12:56:57,229 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 12:56:57,232 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-6 - Starting...
+2022-04-12 12:56:57,245 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-6 - Start completed.
+2022-04-12 12:56:57,245 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 12:56:57,283 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 12:56:57,283 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 12:56:57,337 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 12:56:57,404 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 12:56:57,412 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 12:56:57,415 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 0.377 seconds (JVM running for 10750.16)
+2022-04-12 12:56:57,416 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged
+2022-04-12 12:59:15,055 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 12:59:15,057 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-6 - Shutdown initiated...
+2022-04-12 12:59:15,071 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-6 - Shutdown completed.
+2022-04-12 12:59:15,147 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 36254 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 12:59:15,147 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 12:59:15,229 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 12:59:15,233 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-04-12 12:59:15,294 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 12:59:15,295 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 12:59:15,296 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 12:59:15,307 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 12:59:15,307 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 158 ms
+2022-04-12 12:59:15,350 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 12:59:15,352 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-7 - Starting...
+2022-04-12 12:59:15,364 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-7 - Start completed.
+2022-04-12 12:59:15,365 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 12:59:15,401 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 12:59:15,401 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 12:59:15,451 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 12:59:15,512 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 12:59:15,519 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 12:59:15,523 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 0.392 seconds (JVM running for 10888.267)
+2022-04-12 12:59:15,524 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged
+2022-04-12 13:03:13,319 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 13:03:13,319 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-7 - Shutdown initiated...
+2022-04-12 13:03:13,327 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-7 - Shutdown completed.
+2022-04-12 13:03:13,398 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 36254 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 13:03:13,398 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 13:03:13,504 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 13:03:13,510 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-04-12 13:03:13,564 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 13:03:13,565 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 13:03:13,565 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 13:03:13,571 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 13:03:13,571 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 172 ms
+2022-04-12 13:03:13,594 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 13:03:13,596 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-8 - Starting...
+2022-04-12 13:03:13,608 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-8 - Start completed.
+2022-04-12 13:03:13,608 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 13:03:13,645 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 13:03:13,645 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 13:03:13,697 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 13:03:13,774 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 13:03:13,784 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 13:03:13,788 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 0.411 seconds (JVM running for 11126.532)
+2022-04-12 13:03:13,789 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged
+2022-04-12 13:03:24,480 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 13:03:24,480 [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-04-12 13:03:24,481 [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+2022-04-12 13:03:24,483 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedJAVA of Level-3
+2022-04-12 15:13:11,385 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 15:13:11,386 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-8 - Shutdown initiated...
+2022-04-12 15:13:11,396 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-8 - Shutdown completed.
+2022-04-12 15:13:11,478 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 36254 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 15:13:11,478 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 15:13:11,575 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 15:13:11,579 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-12 15:13:11,636 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 15:13:11,637 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 15:13:11,637 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 15:13:11,641 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 15:13:11,641 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 161 ms
+2022-04-12 15:13:11,669 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 15:13:11,672 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-9 - Starting...
+2022-04-12 15:13:11,685 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-9 - Start completed.
+2022-04-12 15:13:11,685 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 15:13:11,725 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 15:13:11,725 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 15:13:11,793 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 15:13:11,875 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 15:13:11,883 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 15:13:11,887 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 0.431 seconds (JVM running for 15491.095)
+2022-04-12 15:13:11,888 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged
+2022-04-12 15:14:45,423 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 15:14:45,423 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-9 - Shutdown initiated...
+2022-04-12 15:14:45,427 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-9 - Shutdown completed.
+2022-04-12 15:14:45,505 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 36254 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 15:14:45,506 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 15:14:45,604 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 15:14:45,608 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-12 15:14:45,658 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 15:14:45,659 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 15:14:45,659 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 15:14:45,665 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 15:14:45,665 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 158 ms
+2022-04-12 15:14:45,688 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 15:14:45,690 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-10 - Starting...
+2022-04-12 15:14:45,703 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-10 - Start completed.
+2022-04-12 15:14:45,703 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 15:14:45,739 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 15:14:45,739 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 15:14:45,790 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 15:14:45,861 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 15:14:45,869 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 15:14:45,872 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 0.394 seconds (JVM running for 15585.081)
+2022-04-12 15:14:45,874 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged
+2022-04-12 16:44:55,717 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 16:44:55,718 [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-04-12 16:44:55,721 [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 3 ms
+2022-04-12 16:44:55,732 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 16:45:06,928 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 16:45:48,279 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 16:45:51,257 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 16:45:53,959 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 16:46:14,412 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 16:46:17,416 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedJAVA of Level-1
+2022-04-12 16:46:23,734 [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested.
+2022-04-12 16:46:23,748 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 16:46:23,750 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-10 - Shutdown initiated...
+2022-04-12 16:46:23,766 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-10 - Shutdown completed.
+2022-04-12 16:46:26,865 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 77604 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 16:46:26,866 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 16:46:26,905 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-12 16:46:26,905 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-12 16:46:27,472 [ERROR] org.springframework.boot.SpringApplication Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:489)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:140)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.softwareChaser.springboot.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@2aae9190]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:250)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:243)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:233)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:181)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:156)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/apache/http/impl/nio/client/HttpAsyncClientBuilder
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.apache.http.impl.nio.client.HttpAsyncClientBuilder
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 42 common frames omitted
+2022-04-12 16:46:27,476 [WARN] org.springframework.boot.SpringApplication Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@2aae9190]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1300)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:873)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:861)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:848)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.softwareChaser.springboot.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: org/apache/http/impl/nio/client/HttpAsyncClientBuilder
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.apache.http.impl.nio.client.HttpAsyncClientBuilder
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 30 common frames omitted
+2022-04-12 16:47:13,295 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 77730 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 16:47:13,296 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 16:47:13,336 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-12 16:47:13,337 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-12 16:47:13,844 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 16:47:13,883 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2022-04-12 16:47:14,349 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 16:47:14,357 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 16:47:14,357 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 16:47:14,398 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 16:47:14,398 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1061 ms
+2022-04-12 16:47:14,510 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 16:47:14,556 [INFO] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-12 16:47:14,676 [INFO] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-12 16:47:14,751 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2022-04-12 16:47:14,965 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2022-04-12 16:47:14,981 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 16:47:15,501 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 16:47:15,508 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 16:47:15,799 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 16:47:16,055 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 16:47:16,082 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 16:47:16,092 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 3.084 seconds (JVM running for 3.709)
+2022-04-12 16:47:22,608 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 16:47:22,609 [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-04-12 16:47:22,611 [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 2 ms
+2022-04-12 16:47:22,653 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 16:47:27,751 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedJAVA of Level-1
+2022-04-12 16:47:54,707 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 16:48:31,631 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 16:48:31,634 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2022-04-12 16:48:31,643 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+2022-04-12 16:48:31,732 [INFO] com.softwareChaser.springboot.BackendApplication Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 77730 (/home/localadmin/Documents/frontend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend)
+2022-04-12 16:48:31,732 [INFO] com.softwareChaser.springboot.BackendApplication No active profile set, falling back to 1 default profile: "default"
+2022-04-12 16:48:31,840 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-12 16:48:31,845 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-04-12 16:48:31,909 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8086 (http)
+2022-04-12 16:48:31,910 [INFO] org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-12 16:48:31,910 [INFO] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 16:48:31,916 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-12 16:48:31,916 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 182 ms
+2022-04-12 16:48:31,944 [INFO] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-12 16:48:31,947 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Starting...
+2022-04-12 16:48:31,964 [INFO] com.zaxxer.hikari.HikariDataSource HikariPool-2 - Start completed.
+2022-04-12 16:48:31,964 [INFO] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-12 16:48:32,013 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-12 16:48:32,014 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-12 16:48:32,074 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-12 16:48:32,155 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2022-04-12 16:48:32,170 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-12 16:48:32,174 [INFO] com.softwareChaser.springboot.BackendApplication Started BackendApplication in 0.472 seconds (JVM running for 79.792)
+2022-04-12 16:48:32,176 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Condition evaluation unchanged
+2022-04-12 16:48:39,976 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 16:48:39,977 [INFO] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-04-12 16:48:39,981 [INFO] org.springframework.web.servlet.DispatcherServlet Completed initialization in 3 ms
+2022-04-12 16:48:39,997 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 16:48:41,846 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 16:49:29,138 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 16:49:56,501 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 16:51:17,903 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 16:51:49,462 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 16:51:52,439 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedJAVA of Level-1
+2022-04-12 16:59:29,073 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:00:23,219 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:00:30,693 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:00:35,453 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:01:03,965 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:01:46,295 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:02:04,033 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:08:54,206 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:08:55,217 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:09:06,359 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:09:47,513 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:09:47,674 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:10:11,056 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:10:35,323 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:10:56,887 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:11:22,499 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:11:56,257 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:12:53,203 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:13:21,820 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:15:07,825 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:15:07,922 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:16:50,377 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:18:41,556 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:19:21,681 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:20:34,342 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:22:18,792 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:23:16,799 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:23:51,654 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:23:51,804 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:26:25,319 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:27:28,214 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:27:28,410 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:28:18,738 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:28:22,335 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedC of Level-1
+2022-04-12 17:32:05,997 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:32:14,739 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
+2022-04-12 17:32:19,029 [ERROR] com.softwareChaser.springboot.Controller.QuizController you have choosedPYTHON of Level-1
