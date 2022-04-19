@@ -50,7 +50,7 @@ public class QuizController {
 	        
 	}
 	
-	@GetMapping("/quiz/{id}")
+	@GetMapping("/quiz-id/{id}")
 	public ResponseEntity<Question> fetchByQid(@PathVariable("id") Long Qid) throws QuizNotFoundException
 	{
 		
@@ -58,14 +58,14 @@ public class QuizController {
 		return new ResponseEntity<>(Qservice.fetchByQid(Qid),HttpStatus.OK);
 	}	
 	
-	@GetMapping("/quiz/Category/{Category}")
-	public ResponseEntity<List<Question>> fetchByCategory(@PathVariable("Category") String Category)
+	@GetMapping("/quiz-category/{Category}")
+	public ResponseEntity<List<Question>> fetchByCategory(@PathVariable("Category") String Category) throws QuizNotFoundException
 	{
 		logger.error("You have choosed category"+Category);
 		return new ResponseEntity<>(Qservice.fetchByCategory(Category),HttpStatus.OK);
 	}	
 
-	@GetMapping("/quiz/Difficulty/{Difficulty}")
+	@GetMapping("/quiz-difficulty/{Difficulty}")
 	public ResponseEntity<List<Question>> fetchByDifficulty(@PathVariable("Difficulty") String Difficulty)
 	{
 		logger.error("You have entered into "+Difficulty);

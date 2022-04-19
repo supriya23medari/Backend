@@ -40,9 +40,16 @@ public class QuizServiceImpl implements QuizService{
 	}
 
 
-	public List<Question> fetchByCategory(String Category) {
+	public List<Question> fetchByCategory(String Category) throws QuizNotFoundException {
 		// TODO Auto-generated method stub
-	   return Qrepo.findByCategory(Category);
+	   
+	    Optional<List<Question>> question=  Qrepo.findByCategory(Category);
+		
+	 		if(Category!="JAVA" || Category!="JAVASCRIPT" || Category!="PYTHON" || Category!="C")
+	 		{
+	 			throw new QuizNotFoundException("Quiz not found");
+	 		}
+	 		return question.get();
 	}
 
 	

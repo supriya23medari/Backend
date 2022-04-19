@@ -16,7 +16,7 @@ public interface QuizService {
 
 	public Question saveQuestions(Question question);
 
-	public List<Question> fetchByCategory(String Category);
+	public List<Question> fetchByCategory(String Category) throws QuizNotFoundException;
 	
 	public List<Question> fetchByDifficulty(String Difficulty);
 

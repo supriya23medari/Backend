@@ -4781,3 +4781,195 @@ Caused by: java.lang.ClassNotFoundException: org.apache.http.impl.nio.client.Htt
 
 
 
+2022-04-19 11:01:43,325 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:01:43,325 [INFO] HikariPool-2 - Shutdown initiated...
+2022-04-19 11:01:43,330 [INFO] HikariPool-2 - Shutdown completed.
+2022-04-19 11:01:43,394 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:01:43,395 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:01:43,523 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:01:43,527 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:01:43,604 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:01:43,605 [INFO] Starting service [Tomcat]
+2022-04-19 11:01:43,605 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:01:43,615 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:01:43,615 [INFO] Root WebApplicationContext: initialization completed in 219 ms
+2022-04-19 11:01:43,657 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:01:43,661 [INFO] HikariPool-3 - Starting...
+2022-04-19 11:01:43,675 [INFO] HikariPool-3 - Start completed.
+2022-04-19 11:01:43,676 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:01:43,731 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:01:43,731 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:01:43,798 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:01:43,886 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:01:43,895 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:01:43,900 [INFO] Started BackendApplication in 0.531 seconds (JVM running for 3152.799)
+2022-04-19 11:01:43,901 [INFO] Condition evaluation unchanged
+2022-04-19 11:01:52,316 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:01:52,317 [INFO] HikariPool-3 - Shutdown initiated...
+2022-04-19 11:01:52,326 [INFO] HikariPool-3 - Shutdown completed.
+2022-04-19 11:01:52,386 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:01:52,386 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:01:52,484 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:01:52,489 [INFO] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:01:52,540 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:01:52,541 [INFO] Starting service [Tomcat]
+2022-04-19 11:01:52,541 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:01:52,546 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:01:52,546 [INFO] Root WebApplicationContext: initialization completed in 158 ms
+2022-04-19 11:01:52,569 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:01:52,571 [INFO] HikariPool-4 - Starting...
+2022-04-19 11:01:52,583 [INFO] HikariPool-4 - Start completed.
+2022-04-19 11:01:52,583 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:01:52,627 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:01:52,627 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:01:52,686 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:01:52,757 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:01:52,764 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:01:52,768 [INFO] Started BackendApplication in 0.402 seconds (JVM running for 3161.668)
+2022-04-19 11:01:52,770 [INFO] Condition evaluation unchanged
+2022-04-19 11:02:43,240 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:02:43,240 [INFO] HikariPool-4 - Shutdown initiated...
+2022-04-19 11:02:43,246 [INFO] HikariPool-4 - Shutdown completed.
+2022-04-19 11:02:43,298 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:02:43,299 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:02:43,388 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:02:43,392 [INFO] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:02:43,443 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:02:43,444 [INFO] Starting service [Tomcat]
+2022-04-19 11:02:43,444 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:02:43,448 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:02:43,448 [INFO] Root WebApplicationContext: initialization completed in 147 ms
+2022-04-19 11:02:43,473 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:02:43,476 [INFO] HikariPool-5 - Starting...
+2022-04-19 11:02:43,489 [INFO] HikariPool-5 - Start completed.
+2022-04-19 11:02:43,489 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:02:43,527 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:02:43,527 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:02:43,579 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:02:43,644 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:02:43,652 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:02:43,658 [INFO] Started BackendApplication in 0.376 seconds (JVM running for 3212.557)
+2022-04-19 11:02:43,660 [INFO] Condition evaluation unchanged
+2022-04-19 11:05:07,276 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:05:07,276 [INFO] HikariPool-5 - Shutdown initiated...
+2022-04-19 11:05:07,282 [INFO] HikariPool-5 - Shutdown completed.
+2022-04-19 11:05:07,332 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:05:07,333 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:05:07,417 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:05:07,420 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:05:07,467 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:05:07,468 [INFO] Starting service [Tomcat]
+2022-04-19 11:05:07,468 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:05:07,472 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:05:07,472 [INFO] Root WebApplicationContext: initialization completed in 138 ms
+2022-04-19 11:05:07,496 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:05:07,498 [INFO] HikariPool-6 - Starting...
+2022-04-19 11:05:07,511 [INFO] HikariPool-6 - Start completed.
+2022-04-19 11:05:07,511 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:05:07,548 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:05:07,549 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:05:07,604 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:05:07,666 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:05:07,673 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:05:07,678 [INFO] Started BackendApplication in 0.364 seconds (JVM running for 3356.578)
+2022-04-19 11:05:07,680 [INFO] Condition evaluation unchanged
+2022-04-19 11:05:44,137 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:05:44,138 [INFO] HikariPool-6 - Shutdown initiated...
+2022-04-19 11:05:44,147 [INFO] HikariPool-6 - Shutdown completed.
+2022-04-19 11:05:44,206 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:05:44,206 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:05:44,295 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:05:44,298 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:05:44,347 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:05:44,347 [INFO] Starting service [Tomcat]
+2022-04-19 11:05:44,347 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:05:44,352 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:05:44,352 [INFO] Root WebApplicationContext: initialization completed in 144 ms
+2022-04-19 11:05:44,376 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:05:44,378 [INFO] HikariPool-7 - Starting...
+2022-04-19 11:05:44,391 [INFO] HikariPool-7 - Start completed.
+2022-04-19 11:05:44,392 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:05:44,431 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:05:44,432 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:05:44,483 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:05:44,545 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:05:44,553 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:05:44,557 [INFO] Started BackendApplication in 0.37 seconds (JVM running for 3393.456)
+2022-04-19 11:05:44,559 [INFO] Condition evaluation unchanged
+2022-04-19 11:05:47,961 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:05:47,962 [INFO] HikariPool-7 - Shutdown initiated...
+2022-04-19 11:05:47,980 [INFO] HikariPool-7 - Shutdown completed.
+2022-04-19 11:05:48,057 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:05:48,057 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:05:48,141 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:05:48,145 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:05:48,193 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:05:48,193 [INFO] Starting service [Tomcat]
+2022-04-19 11:05:48,193 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:05:48,198 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:05:48,198 [INFO] Root WebApplicationContext: initialization completed in 139 ms
+2022-04-19 11:05:48,220 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:05:48,222 [INFO] HikariPool-8 - Starting...
+2022-04-19 11:05:48,236 [INFO] HikariPool-8 - Start completed.
+2022-04-19 11:05:48,236 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:05:48,273 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:05:48,274 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:05:48,324 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:05:48,382 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:05:48,389 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:05:48,396 [INFO] Started BackendApplication in 0.358 seconds (JVM running for 3397.296)
+2022-04-19 11:05:48,398 [INFO] Condition evaluation unchanged
+2022-04-19 11:06:15,841 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:06:15,843 [INFO] HikariPool-8 - Shutdown initiated...
+2022-04-19 11:06:15,859 [INFO] HikariPool-8 - Shutdown completed.
+2022-04-19 11:06:15,936 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:06:15,936 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:06:16,021 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:06:16,024 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:06:16,071 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:06:16,071 [INFO] Starting service [Tomcat]
+2022-04-19 11:06:16,071 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:06:16,076 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:06:16,076 [INFO] Root WebApplicationContext: initialization completed in 138 ms
+2022-04-19 11:06:16,098 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:06:16,101 [INFO] HikariPool-9 - Starting...
+2022-04-19 11:06:16,115 [INFO] HikariPool-9 - Start completed.
+2022-04-19 11:06:16,115 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:06:16,152 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:06:16,152 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:06:16,201 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:06:16,258 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:06:16,266 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:06:16,274 [INFO] Started BackendApplication in 0.356 seconds (JVM running for 3425.173)
+2022-04-19 11:06:16,275 [INFO] Condition evaluation unchanged
+2022-04-19 11:06:27,114 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-19 11:06:27,114 [INFO] Initializing Servlet 'dispatcherServlet'
+2022-04-19 11:06:27,115 [INFO] Completed initialization in 1 ms
+2022-04-19 11:06:41,699 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:06:41,699 [INFO] HikariPool-9 - Shutdown initiated...
+2022-04-19 11:06:41,703 [INFO] HikariPool-9 - Shutdown completed.
+2022-04-19 11:06:41,768 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:06:41,768 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:06:41,864 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:06:41,868 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:06:41,919 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:06:41,919 [INFO] Starting service [Tomcat]
+2022-04-19 11:06:41,919 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:06:41,924 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:06:41,924 [INFO] Root WebApplicationContext: initialization completed in 155 ms
+2022-04-19 11:06:41,949 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:06:41,951 [INFO] HikariPool-10 - Starting...
+2022-04-19 11:06:41,966 [INFO] HikariPool-10 - Start completed.
+2022-04-19 11:06:41,966 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:06:42,001 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:06:42,001 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:06:42,049 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:06:42,108 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:06:42,120 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:06:42,129 [INFO] Started BackendApplication in 0.381 seconds (JVM running for 3451.029)
+2022-04-19 11:06:42,131 [INFO] Condition evaluation unchanged
+2022-04-19 11:06:47,338 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-19 11:06:47,338 [INFO] Initializing Servlet 'dispatcherServlet'
+2022-04-19 11:06:47,338 [INFO] Completed initialization in 0 ms
+2022-04-19 11:06:47,341 [ERROR] You have choosed categoryjaba
+2022-04-19 11:06:47,351 [WARN] Resolved [com.softwareChaser.springboot.Error.QuizNotFoundException: Quiz not found]
