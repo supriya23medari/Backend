@@ -1,0 +1,59 @@
+"qid","question","category","correct_answers","difficulty"
+1,Which of the following option leads to the portability and security of Java?,JAVA,Bytecode is executed by JVM,Level-1
+2, Which of the following is not a Java features?,JAVA,Use of pointers,Level-1
+3, _____ is used to find and fix bugs in the Java programs.,JAVA,JDB,Level-1
+4,Which of the following is a valid declaration of a char?,JAVA,char ch= 'utea';,Level-1
+5,What is the return type of the hashCode() method in the Object class?,JAVA,int,Level-1
+6,Which of the following tool is used to generate API documentation in HTML format from doc comments in source code? ,JAVA,javadoctool,Level-1
+7,Which of the following creates a List of 3 visible items and multiple selections abled?,JAVA,"new List(3, true)",Level-1
+8,Which method of the Class.class is used to determine the name of a class represented by the class object as a String?,JAVA,getName(),Level-1
+9,"In which process, a local variable has the same name as one of the instance variables?",JAVA,Variable Shadowing,Level-1
+10,Which package contains the Random class?,JAVA,java.util package,Level-1
+11,What is the extension of java code files?,JAVA,.java,Level-2
+13,Which of the following is true about servlets?,JAVA, 0 to 65535,Level-2
+14,Which one of the following is not an access modifier?,JAVA,Void,Level-2
+15,Multiple inheritance means,JAVA,one class inheriting from more super classes,Level-2
+16,"To prevent any method from overriding, we declare the method as",JAVA,final,Level-2
+17,"The correct order of the declarations in a Java program is,",JAVA,"Package declaration, import statement, class declaration",Level-2
+18,"When an overridden method is called from within a subclass, it will always refer to the version of that method defined by the",JAVA,Subclas,Level-2
+19,Mark the incorrect statement from the following:,JAVA,In java language error processing is built into the language,Level-2
+20,Mark the incorrect statement from the following:,JAVA,In java language error processing is built into the language,Level-2
+55,How do you create a variable with the floating number 2.8?,JAVA,float x = 2.8f;,Level-3
+56,Which method can be used to find the length of a string?,JAVA, length(),Level-3
+28, If a class inheriting an abstract class does not define all of its function then it will be known as?,JAVA,Abstract,Level-3
+29," In java control statements break, continue, return, try-catch-finally and assert belongs to?",JAVA,Transfer statements,Level-3
+30,What is the maximum length of a Python identifier?,PYTHON,No Fixed Lenght is specified,Level-1
+31,Which keyword is used for function in Python language?,PYTHON,Def,Level-1
+32, Which of the following functions is a built-in function in python?,PYTHON,print(),Level-1
+33,What is the method inside the class in python language?,PYTHON,Function,Level-1
+34,What is the method inside the class in python language?,PYTHON,val,Level-1
+35,Which of the following is not a keyword in Python language?,PYTHON,val,Level-1
+36,Which one of the following has the highest precedence in the expression?,PYTHON,Parentheses,Level-1
+37,Operators with the same precedence are evaluated in which manner?,PYTHON, Left to Right,Level-1
+38, All keywords in Python are in _________,PYTHON,None of the mentioned,Level-1
+39,Is Python case sensitive when dealing with identifiers?,PYTHON,yes,Level-1
+40,Who is the father of C language?,C,Dennis Ritchie,Level-1
+41,Which of the following is not a valid C variable name?,C,int $main;,Level-1
+42,All keywords in C are in ____________,C,LowerCase letters,Level-1
+43,Which of the following is true for variable names in C?,C, Variable names cannot start with a digit,Level-1
+12,Which of the following is true about servlets?,JAVA,"Servlets execute within the address space of web server, platform independent ",Level-3
+44,Which is valid C expression?,C,int my_num = 100000;,Level-1
+45,Which of the following cannot be a variable name in C?,C, volatile,Level-1
+46,What is short int in C programming?,C,Short is the qualifier and int is the basic data type,Level-1
+47,Which of the following declaration is not supported by C language?,C,String str;,Level-1
+48,Which keyword is used to prevent any changes in the variable within a C program?,C,const,Level-1
+49,What is the result of logical or relational expression in C?,C,"0 or 1",Level-1
+50,What is a correct syntax to output 'Hello World' in Java?,JAVA,System.out.println('Hello World');,Level-3
+51, What is the size of byte variable?,JAVA,"8 bit",Level-3
+52,What is the size of float variable?,JAVA, 32 bit,Level-3
+53,Which data type is used to create a variable that should store text?,JAVA,String,Level-3
+54,How do you create a variable with the numeric value 5?,JAVA, int x = 5;   ,Level-3
+58,How do you write 'Hello World' in an alert box?,JAVASCRIPT, alert('Hello World');,Level-1
+59,How to write an IF statement in JavaScript?,JAVASCRIPT,if (i == 5),Level-1
+60,How to write an IF statement for executing some code if 'i' is NOT equal to 5?,JAVASCRIPT, if (i != 5)   ,Level-1
+61,How does a FOR loop start?,JAVASCRIPT,for (i = 0; i <= 5; i++),Level-1
+62,What is the correct way to write a JavaScript array?,JAVASCRIPT,"var colors = ['red','green','blue']",Level-1
+63,"How do you round the number 7.25, to the nearest integer?",JAVASCRIPT, Math.round(7.25),Level-1
+64,How do you find the number with the highest value of x and y?,JAVASCRIPT," Math.max(x, y)",Level-1
+65,Which event occurs when the user clicks on an HTML element?,JAVASCRIPT,onclick,Level-1
+57,Inside which HTML element do we put the JavaScript?,JAVASCRIPT,'<script>',Level-1
