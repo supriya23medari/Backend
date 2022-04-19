@@ -75,7 +75,7 @@ public class QuizController {
 	@GetMapping("/quiz/CategoryAndDifficulty") 
 	public ResponseEntity<List<Question>> fetchByCategoryAndDifficulty(@RequestParam String Category,@RequestParam String Difficulty) 
 	{ 
-		logger.error("you have choosed"+Category+" of "+Difficulty);
+		logger.error("you have choosed "+Category+" of "+Difficulty);
 	return new ResponseEntity<>(Qservice.fetchByCategoryAndDifficulty(Category, Difficulty),HttpStatus.OK); 
     	
 	}

@@ -5,8 +5,6 @@ import org.springframework.http.HttpStatus;
 
 public class ErrorMessage {
 
-
-
 	@Override
 	public String toString() {
 		return "ErrorMessage [status=" + status + ", message=" + message + "]";
