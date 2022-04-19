@@ -28,7 +28,7 @@ public class QuizServiceImpl implements QuizService{
 		return question.get();
 	}
 	
-	public Question saveQuestions(Question question) {
+	public Question saveQuestions(Question question){
 		return Qrepo.save(question);
 	}
 

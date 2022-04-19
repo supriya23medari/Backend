@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.softwareChaser.springboot.Error.QuizAlreadyExistsException;
 import com.softwareChaser.springboot.Error.QuizNotFoundException;
 import com.softwareChaser.springboot.Model.Question;
 import com.softwareChaser.springboot.Service.QuizService;
@@ -28,15 +29,15 @@ public class QuizController {
 	@Autowired
 	private QuizService Qservice;
 	
-	@GetMapping("/")
-	public String home() {
-		return "hello";
-	}
+//	@GetMapping("/")
+//	public String home() {
+//		return "index.html";
+//	}
 
 	@PostMapping("/quiz")
 	public ResponseEntity<Question> SaveQuestions(@RequestBody Question question) {
 	
-		logger.error("questions saved");
+		logger.error("Questions saved ");
 		return new ResponseEntity<>(Qservice.saveQuestions(question), HttpStatus.OK);
 	}
 	
@@ -54,14 +55,14 @@ public class QuizController {
 	public ResponseEntity<Question> fetchByQid(@PathVariable("id") Long Qid) throws QuizNotFoundException
 	{
 		
-		logger.error("question id is "+Qid);
+		logger.error(" Question id is "+Qid);
 		return new ResponseEntity<>(Qservice.fetchByQid(Qid),HttpStatus.OK);
 	}	
 	
 	@GetMapping("/quiz-category/{Category}")
 	public ResponseEntity<List<Question>> fetchByCategory(@PathVariable("Category") String Category) throws QuizNotFoundException
 	{
-		logger.error("You have choosed category"+Category);
+		logger.error("You have choosed category "+Category);
 		return new ResponseEntity<>(Qservice.fetchByCategory(Category),HttpStatus.OK);
 	}	
 

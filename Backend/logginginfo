@@ -4973,3 +4973,591 @@ Caused by: java.lang.ClassNotFoundException: org.apache.http.impl.nio.client.Htt
 2022-04-19 11:06:47,338 [INFO] Completed initialization in 0 ms
 2022-04-19 11:06:47,341 [ERROR] You have choosed categoryjaba
 2022-04-19 11:06:47,351 [WARN] Resolved [com.softwareChaser.springboot.Error.QuizNotFoundException: Quiz not found]
+2022-04-19 11:17:05,514 [ERROR] you have choosed PYTHON of Level-1
+2022-04-19 11:18:20,647 [ERROR] you have choosed PYTHON of Level-1
+2022-04-19 11:18:24,423 [ERROR] you have choosed PYTHON of Level-1
+2022-04-19 11:18:29,565 [ERROR] you have choosed PYTHON of Level-1
+2022-04-19 11:18:36,172 [ERROR] you have choosed PYTHON of Level-2
+2022-04-19 11:19:25,240 [ERROR] you have choosed PYTHON of Level-2
+2022-04-19 11:29:16,785 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:29:16,786 [INFO] HikariPool-10 - Shutdown initiated...
+2022-04-19 11:29:16,799 [INFO] HikariPool-10 - Shutdown completed.
+2022-04-19 11:29:16,878 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:29:16,879 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:29:16,971 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:29:16,976 [INFO] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:29:17,046 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:29:17,046 [INFO] Starting service [Tomcat]
+2022-04-19 11:29:17,046 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:29:17,050 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:29:17,050 [INFO] Root WebApplicationContext: initialization completed in 170 ms
+2022-04-19 11:29:17,075 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:29:17,080 [INFO] HikariPool-11 - Starting...
+2022-04-19 11:29:17,094 [INFO] HikariPool-11 - Start completed.
+2022-04-19 11:29:17,094 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:29:17,132 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:29:17,132 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:29:17,189 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:29:17,268 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:29:17,276 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:29:17,281 [INFO] Started BackendApplication in 0.425 seconds (JVM running for 4806.181)
+2022-04-19 11:29:17,282 [INFO] Condition evaluation unchanged
+2022-04-19 11:29:44,721 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:29:44,722 [INFO] HikariPool-11 - Shutdown initiated...
+2022-04-19 11:29:44,729 [INFO] HikariPool-11 - Shutdown completed.
+2022-04-19 11:29:44,792 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:29:44,792 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:29:44,901 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:29:44,904 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:29:44,951 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:29:44,951 [INFO] Starting service [Tomcat]
+2022-04-19 11:29:44,951 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:29:44,956 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:29:44,956 [INFO] Root WebApplicationContext: initialization completed in 163 ms
+2022-04-19 11:29:44,978 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:29:44,980 [INFO] HikariPool-12 - Starting...
+2022-04-19 11:29:44,992 [INFO] HikariPool-12 - Start completed.
+2022-04-19 11:29:44,992 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:29:45,027 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:29:45,027 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:29:45,031 [WARN] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'quizController': Unsatisfied dependency expressed through field 'Qservice'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@50335dd1]
+2022-04-19 11:29:45,031 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:29:45,031 [INFO] HikariPool-12 - Shutdown initiated...
+2022-04-19 11:29:45,032 [INFO] HikariPool-12 - Shutdown completed.
+2022-04-19 11:29:45,032 [INFO] Stopping service [Tomcat]
+2022-04-19 11:29:45,039 [INFO] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-19 11:29:45,053 [ERROR] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'quizController': Unsatisfied dependency expressed through field 'Qservice'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@50335dd1]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.5.jar:2.6.5]
+	at com.softwareChaser.springboot.BackendApplication.main(BackendApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.5.jar:2.6.5]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@50335dd1]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.17.jar:5.3.17]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@50335dd1]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.17.jar:5.3.17]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.17.jar:5.3.17]
+	... 37 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: QuizAlreadyExistsException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.privateGetPublicMethods(Class.java:3427) ~[na:na]
+	at java.base/java.lang.Class.getMethods(Class.java:2019) ~[na:na]
+	at org.springframework.util.ReflectionUtils.findConcreteMethodsOnInterfaces(ReflectionUtils.java:495) ~[spring-core-5.3.17.jar:5.3.17]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:468) ~[spring-core-5.3.17.jar:5.3.17]
+	... 39 common frames omitted
+Caused by: java.lang.ClassNotFoundException: QuizAlreadyExistsException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.5.jar:2.6.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 45 common frames omitted
+2022-04-19 11:29:56,514 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:29:56,514 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:29:56,602 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:29:56,607 [INFO] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:29:56,672 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:29:56,673 [INFO] Starting service [Tomcat]
+2022-04-19 11:29:56,673 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:29:56,679 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:29:56,679 [INFO] Root WebApplicationContext: initialization completed in 164 ms
+2022-04-19 11:29:56,713 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:29:56,716 [INFO] HikariPool-13 - Starting...
+2022-04-19 11:29:56,733 [INFO] HikariPool-13 - Start completed.
+2022-04-19 11:29:56,733 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:29:56,781 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:29:56,781 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:29:56,785 [WARN] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'quizController': Unsatisfied dependency expressed through field 'Qservice'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@33651842]
+2022-04-19 11:29:56,785 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:29:56,785 [INFO] HikariPool-13 - Shutdown initiated...
+2022-04-19 11:29:56,786 [INFO] HikariPool-13 - Shutdown completed.
+2022-04-19 11:29:56,786 [INFO] Stopping service [Tomcat]
+2022-04-19 11:29:56,791 [INFO] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-19 11:29:56,793 [ERROR] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'quizController': Unsatisfied dependency expressed through field 'Qservice'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@33651842]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.5.jar:2.6.5]
+	at com.softwareChaser.springboot.BackendApplication.main(BackendApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.5.jar:2.6.5]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@33651842]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.17.jar:5.3.17]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@33651842]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.17.jar:5.3.17]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.17.jar:5.3.17]
+	... 37 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: QuizAlreadyExistsException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.17.jar:5.3.17]
+	... 39 common frames omitted
+Caused by: java.lang.ClassNotFoundException: QuizAlreadyExistsException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.5.jar:2.6.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 43 common frames omitted
+2022-04-19 11:30:08,255 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:30:08,255 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:30:08,374 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:30:08,379 [INFO] Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:30:08,467 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:30:08,468 [INFO] Starting service [Tomcat]
+2022-04-19 11:30:08,468 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:30:08,473 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:30:08,473 [INFO] Root WebApplicationContext: initialization completed in 216 ms
+2022-04-19 11:30:08,554 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:30:08,558 [INFO] HikariPool-14 - Starting...
+2022-04-19 11:30:08,573 [INFO] HikariPool-14 - Start completed.
+2022-04-19 11:30:08,574 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:30:08,617 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:30:08,617 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:30:08,621 [WARN] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Controller.QuizController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@16c89fe8]
+2022-04-19 11:30:08,621 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:30:08,622 [INFO] HikariPool-14 - Shutdown initiated...
+2022-04-19 11:30:08,623 [INFO] HikariPool-14 - Shutdown completed.
+2022-04-19 11:30:08,623 [INFO] Stopping service [Tomcat]
+2022-04-19 11:30:08,627 [INFO] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-19 11:30:08,629 [ERROR] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Controller.QuizController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@16c89fe8]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.5.jar:2.6.5]
+	at com.softwareChaser.springboot.BackendApplication.main(BackendApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.5.jar:2.6.5]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Controller.QuizController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@16c89fe8]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.17.jar:5.3.17]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.17.jar:5.3.17]
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: QuizAlreadyExistsException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.17.jar:5.3.17]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: QuizAlreadyExistsException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.5.jar:2.6.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 29 common frames omitted
+2022-04-19 11:30:41,121 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:30:41,121 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:30:41,212 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:30:41,215 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:30:41,263 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:30:41,263 [INFO] Starting service [Tomcat]
+2022-04-19 11:30:41,263 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:30:41,268 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:30:41,268 [INFO] Root WebApplicationContext: initialization completed in 146 ms
+2022-04-19 11:30:41,290 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:30:41,292 [INFO] HikariPool-15 - Starting...
+2022-04-19 11:30:41,303 [INFO] HikariPool-15 - Start completed.
+2022-04-19 11:30:41,304 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:30:41,342 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:30:41,342 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:30:41,345 [WARN] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'quizController': Unsatisfied dependency expressed through field 'Qservice'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4152f309]
+2022-04-19 11:30:41,345 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:30:41,346 [INFO] HikariPool-15 - Shutdown initiated...
+2022-04-19 11:30:41,346 [INFO] HikariPool-15 - Shutdown completed.
+2022-04-19 11:30:41,347 [INFO] Stopping service [Tomcat]
+2022-04-19 11:30:41,351 [INFO] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-19 11:30:41,353 [ERROR] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'quizController': Unsatisfied dependency expressed through field 'Qservice'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4152f309]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.5.jar:2.6.5]
+	at com.softwareChaser.springboot.BackendApplication.main(BackendApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.5.jar:2.6.5]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4152f309]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.17.jar:5.3.17]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4152f309]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.17.jar:5.3.17]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.17.jar:5.3.17]
+	... 37 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: QuizAlreadyExistsException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.17.jar:5.3.17]
+	... 39 common frames omitted
+Caused by: java.lang.ClassNotFoundException: QuizAlreadyExistsException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.5.jar:2.6.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 43 common frames omitted
+2022-04-19 11:30:47,803 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:30:47,803 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:30:47,892 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:30:47,895 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:30:47,948 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:30:47,949 [INFO] Starting service [Tomcat]
+2022-04-19 11:30:47,949 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:30:47,953 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:30:47,954 [INFO] Root WebApplicationContext: initialization completed in 149 ms
+2022-04-19 11:30:47,978 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:30:47,980 [INFO] HikariPool-16 - Starting...
+2022-04-19 11:30:47,992 [INFO] HikariPool-16 - Start completed.
+2022-04-19 11:30:47,992 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:30:48,031 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:30:48,031 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:30:48,035 [WARN] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'quizController': Unsatisfied dependency expressed through field 'Qservice'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@b532222]
+2022-04-19 11:30:48,035 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:30:48,036 [INFO] HikariPool-16 - Shutdown initiated...
+2022-04-19 11:30:48,037 [INFO] HikariPool-16 - Shutdown completed.
+2022-04-19 11:30:48,037 [INFO] Stopping service [Tomcat]
+2022-04-19 11:30:48,041 [INFO] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-19 11:30:48,043 [ERROR] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'quizController': Unsatisfied dependency expressed through field 'Qservice'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@b532222]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.5.jar:2.6.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.5.jar:2.6.5]
+	at com.softwareChaser.springboot.BackendApplication.main(BackendApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.5.jar:2.6.5]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quizServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@b532222]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.17.jar:5.3.17]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.softwareChaser.springboot.Service.QuizServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@b532222]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.17.jar:5.3.17]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.17.jar:5.3.17]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.17.jar:5.3.17]
+	... 37 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: QuizAlreadyExistsException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.17.jar:5.3.17]
+	... 39 common frames omitted
+Caused by: java.lang.ClassNotFoundException: QuizAlreadyExistsException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.5.jar:2.6.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 43 common frames omitted
+2022-04-19 11:30:55,495 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:30:55,496 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:30:55,583 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:30:55,587 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:30:55,637 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:30:55,638 [INFO] Starting service [Tomcat]
+2022-04-19 11:30:55,638 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:30:55,643 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:30:55,643 [INFO] Root WebApplicationContext: initialization completed in 147 ms
+2022-04-19 11:30:55,667 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:30:55,672 [INFO] HikariPool-17 - Starting...
+2022-04-19 11:30:55,685 [INFO] HikariPool-17 - Start completed.
+2022-04-19 11:30:55,685 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:30:55,722 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:30:55,723 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:30:55,775 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:30:55,850 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:30:55,858 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:30:55,863 [INFO] Started BackendApplication in 0.396 seconds (JVM running for 4904.762)
+2022-04-19 11:30:55,864 [INFO] Condition evaluation unchanged
+2022-04-19 11:32:24,140 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-19 11:32:24,140 [INFO] Initializing Servlet 'dispatcherServlet'
+2022-04-19 11:32:24,141 [INFO] Completed initialization in 1 ms
+2022-04-19 11:32:39,426 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:32:39,426 [INFO] HikariPool-17 - Shutdown initiated...
+2022-04-19 11:32:39,431 [INFO] HikariPool-17 - Shutdown completed.
+2022-04-19 11:32:39,486 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:32:39,486 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:32:39,569 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:32:39,572 [INFO] Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:32:39,620 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:32:39,621 [INFO] Starting service [Tomcat]
+2022-04-19 11:32:39,621 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:32:39,627 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:32:39,627 [INFO] Root WebApplicationContext: initialization completed in 140 ms
+2022-04-19 11:32:39,654 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:32:39,657 [INFO] HikariPool-18 - Starting...
+2022-04-19 11:32:39,669 [INFO] HikariPool-18 - Start completed.
+2022-04-19 11:32:39,669 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:32:39,705 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:32:39,706 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:32:39,761 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:32:39,829 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:32:39,838 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:32:39,842 [INFO] Started BackendApplication in 0.371 seconds (JVM running for 5008.741)
+2022-04-19 11:32:39,844 [INFO] Condition evaluation unchanged
+2022-04-19 11:32:53,265 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:32:53,266 [INFO] HikariPool-18 - Shutdown initiated...
+2022-04-19 11:32:53,279 [INFO] HikariPool-18 - Shutdown completed.
+2022-04-19 11:32:53,350 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:32:53,350 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:32:53,436 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:32:53,440 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:32:53,493 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:32:53,494 [INFO] Starting service [Tomcat]
+2022-04-19 11:32:53,494 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:32:53,499 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:32:53,499 [INFO] Root WebApplicationContext: initialization completed in 148 ms
+2022-04-19 11:32:53,524 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:32:53,526 [INFO] HikariPool-19 - Starting...
+2022-04-19 11:32:53,542 [INFO] HikariPool-19 - Start completed.
+2022-04-19 11:32:53,542 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:32:53,585 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:32:53,585 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:32:53,641 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:32:53,712 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:32:53,721 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:32:53,725 [INFO] Started BackendApplication in 0.398 seconds (JVM running for 5022.625)
+2022-04-19 11:32:53,727 [INFO] Condition evaluation unchanged
+2022-04-19 11:32:55,140 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-19 11:32:55,140 [INFO] Initializing Servlet 'dispatcherServlet'
+2022-04-19 11:32:55,142 [INFO] Completed initialization in 1 ms
+2022-04-19 11:34:22,301 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:34:22,302 [INFO] HikariPool-19 - Shutdown initiated...
+2022-04-19 11:34:22,321 [INFO] HikariPool-19 - Shutdown completed.
+2022-04-19 11:34:22,424 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:34:22,424 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:34:22,534 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:34:22,538 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:34:22,592 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:34:22,593 [INFO] Starting service [Tomcat]
+2022-04-19 11:34:22,593 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:34:22,599 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:34:22,599 [INFO] Root WebApplicationContext: initialization completed in 173 ms
+2022-04-19 11:34:22,624 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:34:22,627 [INFO] HikariPool-20 - Starting...
+2022-04-19 11:34:22,638 [INFO] HikariPool-20 - Start completed.
+2022-04-19 11:34:22,638 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:34:22,675 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:34:22,675 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:34:22,728 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:34:22,804 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:34:22,813 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:34:22,817 [INFO] Started BackendApplication in 0.411 seconds (JVM running for 5111.717)
+2022-04-19 11:34:22,819 [INFO] Condition evaluation unchanged
+2022-04-19 11:34:29,233 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:34:29,234 [INFO] HikariPool-20 - Shutdown initiated...
+2022-04-19 11:34:29,254 [INFO] HikariPool-20 - Shutdown completed.
+2022-04-19 11:34:29,369 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:34:29,369 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:34:29,474 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:34:29,478 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:34:29,536 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:34:29,536 [INFO] Starting service [Tomcat]
+2022-04-19 11:34:29,536 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:34:29,541 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:34:29,542 [INFO] Root WebApplicationContext: initialization completed in 172 ms
+2022-04-19 11:34:29,570 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:34:29,573 [INFO] HikariPool-21 - Starting...
+2022-04-19 11:34:29,587 [INFO] HikariPool-21 - Start completed.
+2022-04-19 11:34:29,587 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:34:29,634 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:34:29,634 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:34:29,698 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:34:29,777 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:34:29,786 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:34:29,791 [INFO] Started BackendApplication in 0.441 seconds (JVM running for 5118.69)
+2022-04-19 11:34:29,792 [INFO] Condition evaluation unchanged
+2022-04-19 11:34:53,224 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:34:53,225 [INFO] HikariPool-21 - Shutdown initiated...
+2022-04-19 11:34:53,248 [INFO] HikariPool-21 - Shutdown completed.
+2022-04-19 11:34:53,357 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-Latitude-3490 with PID 49758 (/home/localadmin/Documents/frontend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/frontend/Backend/Backend)
+2022-04-19 11:34:53,357 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-19 11:34:53,455 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-19 11:34:53,459 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-19 11:34:53,513 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-19 11:34:53,513 [INFO] Starting service [Tomcat]
+2022-04-19 11:34:53,513 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-19 11:34:53,520 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-19 11:34:53,520 [INFO] Root WebApplicationContext: initialization completed in 161 ms
+2022-04-19 11:34:53,546 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-19 11:34:53,548 [INFO] HikariPool-22 - Starting...
+2022-04-19 11:34:53,561 [INFO] HikariPool-22 - Start completed.
+2022-04-19 11:34:53,561 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-19 11:34:53,599 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-19 11:34:53,599 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-19 11:34:53,652 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-19 11:34:53,720 [INFO] LiveReload server is running on port 35729
+2022-04-19 11:34:53,729 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-19 11:34:53,733 [INFO] Started BackendApplication in 0.395 seconds (JVM running for 5142.633)
+2022-04-19 11:34:53,735 [INFO] Condition evaluation unchanged

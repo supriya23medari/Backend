@@ -19,6 +19,12 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 		ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND,exception.getMessage());
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
 	}
+    @ExceptionHandler(QuizAlreadyExistsException.class)
+ 	public ResponseEntity<ErrorMessage> QuizAlreadyExistsException(QuizAlreadyExistsException exception,WebRequest request)
+ 	{
+ 		ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND,exception.getMessage());
+ 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
+ 	}
 }
 
 
