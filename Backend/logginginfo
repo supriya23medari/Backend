@@ -1,27 +1,241 @@
-2022-04-28 11:26:32,133 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-OptiPlex-7050 with PID 1521365 (/home/localadmin/Documents/Spring/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/Spring/Backend/Backend)
-2022-04-28 11:26:32,135 [INFO] No active profile set, falling back to 1 default profile: "default"
-2022-04-28 11:26:32,170 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-28 11:26:32,170 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-28 11:26:32,623 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-28 11:26:32,709 [INFO] Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
-2022-04-28 11:26:33,327 [INFO] Tomcat initialized with port(s): 8086 (http)
-2022-04-28 11:26:33,335 [INFO] Starting service [Tomcat]
-2022-04-28 11:26:33,336 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-28 11:26:33,395 [INFO] Initializing Spring embedded WebApplicationContext
-2022-04-28 11:26:33,395 [INFO] Root WebApplicationContext: initialization completed in 1224 ms
-2022-04-28 11:26:33,489 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-04-28 11:26:33,516 [INFO] HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-04-28 11:26:33,603 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-04-28 11:26:33,661 [INFO] HikariPool-1 - Starting...
-2022-04-28 11:26:33,816 [INFO] HikariPool-1 - Start completed.
-2022-04-28 11:26:33,826 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2022-04-28 11:26:34,341 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-04-28 11:26:34,346 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-28 11:26:34,642 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-04-28 11:26:35,110 [INFO] LiveReload server is running on port 35729
-2022-04-28 11:26:35,137 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
-2022-04-28 11:26:35,147 [INFO] Started BackendApplication in 3.251 seconds (JVM running for 3.871)
-2022-04-28 11:55:08,678 [ERROR] Exception Processing /springboot-keycloak
+2022-04-29 10:28:29,402 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-OptiPlex-7050 with PID 45263 (/home/localadmin/Documents/Spring/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/Spring/Backend/Backend)
+2022-04-29 10:28:29,404 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-29 10:28:29,437 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-29 10:28:29,437 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-29 10:28:29,937 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 10:28:30,053 [INFO] Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interfaces.
+2022-04-29 10:28:30,633 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-29 10:28:30,639 [INFO] Starting service [Tomcat]
+2022-04-29 10:28:30,639 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-29 10:28:30,687 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-29 10:28:30,688 [INFO] Root WebApplicationContext: initialization completed in 1251 ms
+2022-04-29 10:28:30,783 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 10:28:30,822 [INFO] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-29 10:28:30,939 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-29 10:28:31,006 [INFO] HikariPool-1 - Starting...
+2022-04-29 10:28:31,212 [INFO] HikariPool-1 - Start completed.
+2022-04-29 10:28:31,228 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-29 10:28:31,716 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 10:28:31,720 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:28:32,020 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 10:28:32,530 [INFO] LiveReload server is running on port 35729
+2022-04-29 10:28:32,555 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-29 10:28:32,564 [INFO] Started BackendApplication in 3.394 seconds (JVM running for 4.032)
+2022-04-29 10:28:34,081 [ERROR] Exception Processing //auth
+java.lang.RuntimeException: Must set 'resource' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:60)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:28:34,087 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-29 10:28:34,087 [INFO] Initializing Servlet 'dispatcherServlet'
+2022-04-29 10:28:34,088 [INFO] Completed initialization in 1 ms
+2022-04-29 10:28:34,163 [ERROR] Exception Processing /favicon.ico
+java.lang.RuntimeException: Must set 'resource' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:60)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:29:11,582 [ERROR] Exception Processing /
+java.lang.RuntimeException: Must set 'resource' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:60)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:29:11,614 [ERROR] Exception Processing /favicon.ico
+java.lang.RuntimeException: Must set 'resource' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:60)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:29:13,169 [ERROR] Exception Processing /
+java.lang.RuntimeException: Must set 'resource' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:60)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:29:13,248 [ERROR] Exception Processing /favicon.ico
+java.lang.RuntimeException: Must set 'resource' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:60)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:29:14,254 [ERROR] Exception Processing /
+java.lang.RuntimeException: Must set 'resource' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:60)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:29:14,284 [ERROR] Exception Processing /favicon.ico
+java.lang.RuntimeException: Must set 'resource' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:60)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:29:43,388 [INFO] Application shutdown requested.
+2022-04-29 10:29:43,408 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:29:43,413 [INFO] HikariPool-1 - Shutdown initiated...
+2022-04-29 10:29:43,422 [INFO] HikariPool-1 - Shutdown completed.
+2022-04-29 10:29:44,848 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-OptiPlex-7050 with PID 46395 (/home/localadmin/Documents/Spring/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/Spring/Backend/Backend)
+2022-04-29 10:29:44,849 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-29 10:29:44,880 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-29 10:29:44,880 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-29 10:29:45,310 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 10:29:45,395 [INFO] Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interfaces.
+2022-04-29 10:29:45,895 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-29 10:29:45,901 [INFO] Starting service [Tomcat]
+2022-04-29 10:29:45,901 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-29 10:29:45,944 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-29 10:29:45,945 [INFO] Root WebApplicationContext: initialization completed in 1064 ms
+2022-04-29 10:29:46,025 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 10:29:46,050 [INFO] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-29 10:29:46,137 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-29 10:29:46,191 [INFO] HikariPool-1 - Starting...
+2022-04-29 10:29:46,344 [INFO] HikariPool-1 - Start completed.
+2022-04-29 10:29:46,354 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-29 10:29:46,740 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 10:29:46,745 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:29:47,029 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 10:29:47,535 [INFO] LiveReload server is running on port 35729
+2022-04-29 10:29:47,558 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-29 10:29:47,567 [INFO] Started BackendApplication in 2.949 seconds (JVM running for 3.461)
+2022-04-29 10:30:00,526 [ERROR] Exception Processing /
 java.lang.RuntimeException: Must set 'realm' in config
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
@@ -44,10 +258,10 @@ java.lang.RuntimeException: Must set 'realm' in config
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-04-28 11:55:08,684 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-28 11:55:08,684 [INFO] Initializing Servlet 'dispatcherServlet'
-2022-04-28 11:55:08,685 [INFO] Completed initialization in 1 ms
-2022-04-28 11:55:08,766 [ERROR] Exception Processing /favicon.ico
+2022-04-29 10:30:00,532 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-29 10:30:00,532 [INFO] Initializing Servlet 'dispatcherServlet'
+2022-04-29 10:30:00,533 [INFO] Completed initialization in 1 ms
+2022-04-29 10:30:00,585 [ERROR] Exception Processing /favicon.ico
 java.lang.RuntimeException: Must set 'realm' in config
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
@@ -70,7 +284,7 @@ java.lang.RuntimeException: Must set 'realm' in config
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-04-28 12:17:59,590 [ERROR] Exception Processing /
+2022-04-29 10:30:05,366 [ERROR] Exception Processing /swagger-ui.html
 java.lang.RuntimeException: Must set 'realm' in config
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
@@ -93,7 +307,7 @@ java.lang.RuntimeException: Must set 'realm' in config
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-04-28 12:46:45,424 [ERROR] Exception Processing /auth/realms/quizapp/account/
+2022-04-29 10:30:05,407 [ERROR] Exception Processing /favicon.ico
 java.lang.RuntimeException: Must set 'realm' in config
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
@@ -116,7 +330,7 @@ java.lang.RuntimeException: Must set 'realm' in config
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-04-28 12:46:45,472 [ERROR] Exception Processing /favicon.ico
+2022-04-29 10:30:08,180 [ERROR] Exception Processing /swagger-ui.html
 java.lang.RuntimeException: Must set 'realm' in config
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
@@ -139,7 +353,7 @@ java.lang.RuntimeException: Must set 'realm' in config
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-04-28 12:50:43,136 [ERROR] Exception Processing /auth/
+2022-04-29 10:30:08,232 [ERROR] Exception Processing /favicon.ico
 java.lang.RuntimeException: Must set 'realm' in config
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
@@ -162,7 +376,7 @@ java.lang.RuntimeException: Must set 'realm' in config
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-04-28 12:50:43,193 [ERROR] Exception Processing /favicon.ico
+2022-04-29 10:30:09,411 [ERROR] Exception Processing /swagger-ui.html
 java.lang.RuntimeException: Must set 'realm' in config
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
 	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
@@ -185,53 +399,428 @@ java.lang.RuntimeException: Must set 'realm' in config
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-04-28 12:51:21,379 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-04-28 12:51:21,381 [INFO] HikariPool-1 - Shutdown initiated...
-2022-04-28 12:51:21,385 [INFO] HikariPool-1 - Shutdown completed.
-2022-04-28 12:51:21,443 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-OptiPlex-7050 with PID 1521365 (/home/localadmin/Documents/Spring/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/Spring/Backend/Backend)
-2022-04-28 12:51:21,444 [INFO] No active profile set, falling back to 1 default profile: "default"
-2022-04-28 12:51:21,563 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-28 12:51:21,567 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
-2022-04-28 12:51:21,640 [INFO] Tomcat initialized with port(s): 8086 (http)
-2022-04-28 12:51:21,640 [INFO] Starting service [Tomcat]
-2022-04-28 12:51:21,640 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-28 12:51:21,651 [INFO] Initializing Spring embedded WebApplicationContext
-2022-04-28 12:51:21,651 [INFO] Root WebApplicationContext: initialization completed in 205 ms
-2022-04-28 12:51:21,688 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-04-28 12:51:21,692 [INFO] HikariPool-2 - Starting...
-2022-04-28 12:51:21,704 [INFO] HikariPool-2 - Start completed.
-2022-04-28 12:51:21,704 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2022-04-28 12:51:21,743 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-04-28 12:51:21,743 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-28 12:51:21,820 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-04-28 12:51:22,084 [INFO] LiveReload server is running on port 35729
-2022-04-28 12:51:22,094 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
-2022-04-28 12:51:22,098 [INFO] Started BackendApplication in 0.679 seconds (JVM running for 5090.823)
-2022-04-28 12:51:22,100 [INFO] Condition evaluation unchanged
-2022-04-28 12:57:10,087 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-04-28 12:57:10,089 [INFO] HikariPool-2 - Shutdown initiated...
-2022-04-28 12:57:10,102 [INFO] HikariPool-2 - Shutdown completed.
-2022-04-28 12:57:10,169 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-OptiPlex-7050 with PID 1521365 (/home/localadmin/Documents/Spring/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/Spring/Backend/Backend)
-2022-04-28 12:57:10,169 [INFO] No active profile set, falling back to 1 default profile: "default"
-2022-04-28 12:57:10,271 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-28 12:57:10,274 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
-2022-04-28 12:57:10,334 [INFO] Tomcat initialized with port(s): 8086 (http)
-2022-04-28 12:57:10,335 [INFO] Starting service [Tomcat]
-2022-04-28 12:57:10,335 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-28 12:57:10,343 [INFO] Initializing Spring embedded WebApplicationContext
-2022-04-28 12:57:10,343 [INFO] Root WebApplicationContext: initialization completed in 173 ms
-2022-04-28 12:57:10,367 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-04-28 12:57:10,370 [INFO] HikariPool-3 - Starting...
-2022-04-28 12:57:10,386 [INFO] HikariPool-3 - Start completed.
-2022-04-28 12:57:10,387 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2022-04-28 12:57:10,439 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-04-28 12:57:10,439 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-28 12:57:10,513 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-04-28 12:57:10,754 [INFO] LiveReload server is running on port 35729
-2022-04-28 12:57:10,761 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
-2022-04-28 12:57:10,768 [INFO] Started BackendApplication in 0.619 seconds (JVM running for 5439.492)
-2022-04-28 12:57:10,769 [INFO] Condition evaluation unchanged
-2022-04-28 14:45:28,578 [INFO] Application shutdown requested.
-2022-04-28 14:45:28,586 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-04-28 14:45:28,587 [INFO] HikariPool-3 - Shutdown initiated...
-2022-04-28 14:45:28,599 [INFO] HikariPool-3 - Shutdown completed.
+2022-04-29 10:30:09,466 [ERROR] Exception Processing /favicon.ico
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:30:20,006 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:30:20,010 [INFO] HikariPool-1 - Shutdown initiated...
+2022-04-29 10:30:20,021 [INFO] HikariPool-1 - Shutdown completed.
+2022-04-29 10:30:20,083 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-OptiPlex-7050 with PID 46395 (/home/localadmin/Documents/Spring/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/Spring/Backend/Backend)
+2022-04-29 10:30:20,083 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-29 10:30:20,197 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 10:30:20,201 [INFO] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-04-29 10:30:20,266 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-29 10:30:20,267 [INFO] Starting service [Tomcat]
+2022-04-29 10:30:20,267 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-29 10:30:20,277 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-29 10:30:20,277 [INFO] Root WebApplicationContext: initialization completed in 192 ms
+2022-04-29 10:30:20,300 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 10:30:20,303 [INFO] HikariPool-2 - Starting...
+2022-04-29 10:30:20,317 [INFO] HikariPool-2 - Start completed.
+2022-04-29 10:30:20,317 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-29 10:30:20,363 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 10:30:20,363 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:30:20,441 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 10:30:20,676 [INFO] LiveReload server is running on port 35729
+2022-04-29 10:30:20,690 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-29 10:30:20,694 [INFO] Started BackendApplication in 0.633 seconds (JVM running for 36.588)
+2022-04-29 10:30:20,696 [INFO] Condition evaluation unchanged
+2022-04-29 10:30:20,698 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:30:20,699 [INFO] HikariPool-2 - Shutdown initiated...
+2022-04-29 10:30:20,703 [INFO] HikariPool-2 - Shutdown completed.
+2022-04-29 10:30:22,118 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-OptiPlex-7050 with PID 47392 (/home/localadmin/Documents/Spring/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/Spring/Backend/Backend)
+2022-04-29 10:30:22,120 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-29 10:30:22,131 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-OptiPlex-7050 with PID 47381 (/home/localadmin/Documents/Spring/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/Spring/Backend/Backend)
+2022-04-29 10:30:22,132 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-29 10:30:22,162 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-29 10:30:22,162 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-29 10:30:22,174 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-29 10:30:22,174 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-29 10:30:22,705 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 10:30:22,730 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 10:30:22,797 [INFO] Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interfaces.
+2022-04-29 10:30:22,827 [INFO] Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interfaces.
+2022-04-29 10:30:23,386 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-29 10:30:23,392 [INFO] Starting service [Tomcat]
+2022-04-29 10:30:23,392 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-29 10:30:23,414 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-29 10:30:23,421 [INFO] Starting service [Tomcat]
+2022-04-29 10:30:23,421 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-29 10:30:23,439 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-29 10:30:23,440 [INFO] Root WebApplicationContext: initialization completed in 1278 ms
+2022-04-29 10:30:23,472 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-29 10:30:23,473 [INFO] Root WebApplicationContext: initialization completed in 1297 ms
+2022-04-29 10:30:23,536 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 10:30:23,565 [INFO] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-29 10:30:23,573 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 10:30:23,601 [INFO] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-29 10:30:23,657 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-29 10:30:23,695 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-29 10:30:23,720 [INFO] HikariPool-1 - Starting...
+2022-04-29 10:30:23,766 [INFO] HikariPool-1 - Starting...
+2022-04-29 10:30:23,929 [INFO] HikariPool-1 - Start completed.
+2022-04-29 10:30:23,942 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-29 10:30:23,965 [INFO] HikariPool-1 - Start completed.
+2022-04-29 10:30:23,977 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-29 10:30:24,435 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 10:30:24,441 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:30:24,479 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 10:30:24,484 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:30:24,798 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 10:30:24,843 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 10:30:25,485 [INFO] LiveReload server is running on port 35729
+2022-04-29 10:30:25,518 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-29 10:30:25,519 [WARN] Unable to start LiveReload server
+2022-04-29 10:30:25,529 [INFO] Started BackendApplication in 3.666 seconds (JVM running for 4.287)
+2022-04-29 10:30:25,539 [WARN] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8086 is already in use
+2022-04-29 10:30:25,541 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:30:25,542 [INFO] HikariPool-1 - Shutdown initiated...
+2022-04-29 10:30:25,548 [INFO] HikariPool-1 - Shutdown completed.
+2022-04-29 10:30:25,551 [INFO] Stopping service [Tomcat]
+2022-04-29 10:30:25,560 [INFO] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-29 10:30:25,572 [ERROR] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8086 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8086 or configure this application to listen on another port.
+
+2022-04-29 10:30:31,459 [INFO] Application shutdown requested.
+2022-04-29 10:30:31,486 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:30:31,492 [INFO] HikariPool-1 - Shutdown initiated...
+2022-04-29 10:30:31,505 [INFO] HikariPool-1 - Shutdown completed.
+2022-04-29 10:30:32,871 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-OptiPlex-7050 with PID 48018 (/home/localadmin/Documents/Spring/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/Spring/Backend/Backend)
+2022-04-29 10:30:32,872 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-29 10:30:32,903 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-29 10:30:32,903 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-29 10:30:33,344 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 10:30:33,429 [INFO] Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interfaces.
+2022-04-29 10:30:33,949 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-29 10:30:33,954 [INFO] Starting service [Tomcat]
+2022-04-29 10:30:33,955 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-29 10:30:33,997 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-29 10:30:33,997 [INFO] Root WebApplicationContext: initialization completed in 1093 ms
+2022-04-29 10:30:34,080 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 10:30:34,106 [INFO] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-29 10:30:34,191 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-29 10:30:34,248 [INFO] HikariPool-1 - Starting...
+2022-04-29 10:30:34,402 [INFO] HikariPool-1 - Start completed.
+2022-04-29 10:30:34,412 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-29 10:30:34,808 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 10:30:34,813 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:30:35,111 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 10:30:35,546 [INFO] LiveReload server is running on port 35729
+2022-04-29 10:30:35,569 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-29 10:30:35,577 [INFO] Started BackendApplication in 2.935 seconds (JVM running for 3.484)
+2022-04-29 10:30:40,346 [ERROR] Exception Processing /swagger-ui.html
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:30:40,351 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-29 10:30:40,351 [INFO] Initializing Servlet 'dispatcherServlet'
+2022-04-29 10:30:40,352 [INFO] Completed initialization in 1 ms
+2022-04-29 10:30:40,403 [ERROR] Exception Processing /favicon.ico
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:30:43,056 [ERROR] Exception Processing /favicon.ico
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:30:43,943 [ERROR] Exception Processing /swagger-ui.html
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:30:43,971 [ERROR] Exception Processing /favicon.ico
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:30:44,633 [ERROR] Exception Processing /swagger-ui.html
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:30:44,667 [ERROR] Exception Processing /favicon.ico
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:30:44,795 [ERROR] Exception Processing /swagger-ui.html
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:30:44,824 [ERROR] Exception Processing /favicon.ico
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:30:44,980 [ERROR] Exception Processing /swagger-ui.html
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:30:45,015 [ERROR] Exception Processing /favicon.ico
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57)
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202)
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41)
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40)
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89)
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100)
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-29 10:31:23,975 [INFO] Application shutdown requested.
+2022-04-29 10:31:23,991 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:31:23,994 [INFO] HikariPool-1 - Shutdown initiated...
+2022-04-29 10:31:24,003 [INFO] HikariPool-1 - Shutdown completed.
+2022-04-29 10:31:25,275 [INFO] Starting BackendApplication using Java 17.0.2 on localadmin-OptiPlex-7050 with PID 48922 (/home/localadmin/Documents/Spring/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/Spring/Backend/Backend)
+2022-04-29 10:31:25,275 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-04-29 10:31:25,305 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-29 10:31:25,305 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-29 10:31:25,729 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 10:31:25,813 [INFO] Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interfaces.
+2022-04-29 10:31:26,168 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-04-29 10:31:26,175 [INFO] Starting service [Tomcat]
+2022-04-29 10:31:26,175 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-29 10:31:26,211 [INFO] Initializing Spring embedded WebApplicationContext
+2022-04-29 10:31:26,212 [INFO] Root WebApplicationContext: initialization completed in 906 ms
+2022-04-29 10:31:26,315 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 10:31:26,345 [INFO] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-29 10:31:26,445 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-29 10:31:26,524 [INFO] HikariPool-1 - Starting...
+2022-04-29 10:31:26,726 [INFO] HikariPool-1 - Start completed.
+2022-04-29 10:31:26,737 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-29 10:31:27,111 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 10:31:27,116 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 10:31:27,407 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 10:31:27,805 [INFO] LiveReload server is running on port 35729
+2022-04-29 10:31:27,827 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-04-29 10:31:27,835 [INFO] Started BackendApplication in 2.787 seconds (JVM running for 3.328)
