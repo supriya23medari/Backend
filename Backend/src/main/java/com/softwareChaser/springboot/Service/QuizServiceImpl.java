@@ -1,6 +1,7 @@
 package com.softwareChaser.springboot.Service;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,15 +41,12 @@ public class QuizServiceImpl implements QuizService{
 	}
 
 
-	public List<Question> fetchByCategory(String Category) throws QuizNotFoundException {
+	public List<Question> fetchByCategory(String Category){
 		// TODO Auto-generated method stub
 	   
 	    Optional<List<Question>> question=  Qrepo.findByCategory(Category);
 		
-	 		if(Category!="JAVA" || Category!="JAVASCRIPT" || Category!="PYTHON" || Category!="C")
-	 		{
-	 			throw new QuizNotFoundException("Quiz not found");
-	 		}
+	 		
 	 		return question.get();
 	}
 
@@ -64,6 +62,32 @@ public class QuizServiceImpl implements QuizService{
 	public List<Question> fetchByDifficulty(String Difficulty) {
 		// TODO Auto-generated method stub
 		return Qrepo.findByDifficulty(Difficulty);
+	}
+
+	@Override
+	public void deleteQuestionById(Long qId) {
+		// TODO Auto-generated method stub
+		
+		Qrepo.deleteById(qId);
+		
+	}
+
+
+
+	@Override
+	public Question updateQuizByQid(Long qid, Question question) {
+		// TODO Auto-generated method stub
+		Question depDB = Qrepo.findById(qid).get();
+		if(Objects.nonNull(question.getQuestion()) &&!"".equalsIgnoreCase(question.getQuestion()))
+		{
+			depDB.setQuestion(question.getQuestion());
+		}
+		if(Objects.nonNull(question.getCategory()) && !"".equalsIgnoreCase(question.getCategory()))
+		{
+			depDB.setQuestion(question.getCategory());
+		}
+		
+		return Qrepo.save(question);
 	}
 
 
