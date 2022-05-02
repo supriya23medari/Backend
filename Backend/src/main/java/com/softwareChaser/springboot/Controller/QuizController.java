@@ -19,10 +19,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
-import org.springframework.http.MediaType;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
-
-import org.springframework.security.oauth2.jwt.Jwt;
 
 
 import com.softwareChaser.springboot.Error.QuizNotFoundException;
@@ -46,11 +42,9 @@ public class QuizController {
 	private QuizService Qservice;
 	
 	
-	@GetMapping(value="quiz-id/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Question> fetchByQid(@AuthenticationPrincipal Jwt principal ,@PathVariable("id") Long Qid) throws QuizNotFoundException
+	@GetMapping(value="quiz-id/{id}")
+	public ResponseEntity<Question> fetchByQid(@PathVariable("id") Long Qid) throws QuizNotFoundException
 	{
-		 System.out.println(principal.toString());
-	     System.out.println(principal.getClaimAsString("preferred_username"));
 	     
 		logger.info(" Question id is "+Qid);
 		
@@ -86,7 +80,7 @@ public class QuizController {
 	
 
 	
-    @RequestMapping(value = "/quiz", method = RequestMethod.GET)
+    @RequestMapping(value = "/get-quiz", method = RequestMethod.GET)
     @Operation(summary="Get all quiz questions ",responses = {
 			@ApiResponse(description = "Quiz Questions Successfully added",responseCode = "200",content = @Content(mediaType = "application/JSON",schema = @Schema(implementation = Question.class)))
 	})
