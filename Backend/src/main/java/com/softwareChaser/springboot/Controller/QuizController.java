@@ -19,6 +19,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
+import org.springframework.http.MediaType;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+
+import org.springframework.security.oauth2.jwt.Jwt;
+
+
 import com.softwareChaser.springboot.Error.QuizNotFoundException;
 import com.softwareChaser.springboot.Model.Question;
 import com.softwareChaser.springboot.Service.QuizService;
@@ -39,6 +45,18 @@ public class QuizController {
 	@Autowired
 	private QuizService Qservice;
 	
+	
+	@GetMapping(value="quiz-id/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Question> fetchByQid(@AuthenticationPrincipal Jwt principal ,@PathVariable("id") Long Qid) throws QuizNotFoundException
+	{
+		 System.out.println(principal.toString());
+	     System.out.println(principal.getClaimAsString("preferred_username"));
+	     
+		logger.info(" Question id is "+Qid);
+		
+		return new ResponseEntity<>(Qservice.fetchByQid(Qid),HttpStatus.OK);
+	}
+	
 	@DeleteMapping("/questions/{id}")
 	@ApiResponse(description = "Quiz Questions Successfully deleted",responseCode = "200")
 	public String deleteQuestionById(@PathVariable("id") Long QId)
@@ -51,6 +69,7 @@ public class QuizController {
     @ApiResponse(description = "Quiz Questions id updated ",responseCode = "200")
 	public ResponseEntity<Question> updateQuizByQid(@PathVariable("id") Long Qid,@RequestBody Question question)
 	{
+       
 		logger.info(" Question id is updated "+Qid);
 		return new ResponseEntity<>(Qservice.updateQuizByQid(Qid,question),HttpStatus.OK);
 		
@@ -78,13 +97,7 @@ public class QuizController {
 	        
 	}
 	
-	@GetMapping("quiz-id/{id}")
-	public ResponseEntity<Question> fetchByQid(@PathVariable("id") Long Qid) throws QuizNotFoundException
-	{
-		
-		logger.info(" Question id is "+Qid);
-		return new ResponseEntity<>(Qservice.fetchByQid(Qid),HttpStatus.OK);
-	}	
+	
 	
 	@GetMapping("quiz-category/{Category}")
 	public ResponseEntity<List<Question>> fetchByCategory(@PathVariable("Category") String Category) 
