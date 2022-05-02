@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,13 +37,15 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 @RequestMapping("/api")
 public class QuizController {
 	
+	//  slf4j logger
 	Logger logger=LoggerFactory.getLogger(QuizController.class);
 	
 	@Autowired
 	private QuizService Qservice;
 	
-	
+	//get quiz id
 	@GetMapping(value="quiz-id/{id}")
+	@PreAuthorize("hasAnyAuthority('USER')")
 	public ResponseEntity<Question> fetchByQid(@PathVariable("id") Long Qid) throws QuizNotFoundException
 	{
 	     
@@ -51,7 +54,8 @@ public class QuizController {
 		return new ResponseEntity<>(Qservice.fetchByQid(Qid),HttpStatus.OK);
 	}
 	
-	@DeleteMapping("/questions/{id}")
+	//delete quiz question
+	@DeleteMapping("/quiz-del/{id}")
 	@ApiResponse(description = "Quiz Questions Successfully deleted",responseCode = "200")
 	public String deleteQuestionById(@PathVariable("id") Long QId)
 	{
@@ -59,6 +63,8 @@ public class QuizController {
 		Qservice.deleteQuestionById(QId);
 		return "Department deleted successfully";
 	}
+	
+	//update quiz question
 	@PutMapping("/quiz-update/{id}")
     @ApiResponse(description = "Quiz Questions id updated ",responseCode = "200")
 	public ResponseEntity<Question> updateQuizByQid(@PathVariable("id") Long Qid,@RequestBody Question question)
@@ -81,6 +87,7 @@ public class QuizController {
 
 	
     @RequestMapping(value = "/get-quiz", method = RequestMethod.GET)
+//    @PreAuthorize("hasAnyAuthority('ADMIN')")
     @Operation(summary="Get all quiz questions ",responses = {
 			@ApiResponse(description = "Quiz Questions Successfully added",responseCode = "200",content = @Content(mediaType = "application/JSON",schema = @Schema(implementation = Question.class)))
 	})
@@ -126,5 +133,9 @@ public class QuizController {
 		
 	}
 
+	   @GetMapping("/access-denied-response")
+	    public String accessDenied() {
+	        return "Access Denied... You don't have permission.";
+	    }
 
 }
