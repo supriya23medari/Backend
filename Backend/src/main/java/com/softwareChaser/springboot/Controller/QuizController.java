@@ -2,6 +2,8 @@ package com.softwareChaser.springboot.Controller;
 
 import java.util.List;
 
+import javax.annotation.security.RolesAllowed;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +47,6 @@ public class QuizController {
 	
 	//get quiz id
 	@GetMapping(value="quiz-id/{id}")
-	@PreAuthorize("hasAnyAuthority('USER')")
 	public ResponseEntity<Question> fetchByQid(@PathVariable("id") Long Qid) throws QuizNotFoundException
 	{
 	     
@@ -77,6 +78,7 @@ public class QuizController {
 	
 	
     @RequestMapping(value = "/quiz", method = RequestMethod.POST)
+	@RolesAllowed("ADMIN")
     @ApiResponse(description = "Quiz Questions Successfully added",responseCode = "200")
 	public ResponseEntity<Question> SaveQuestions(@RequestBody Question question) {
 	
@@ -87,7 +89,7 @@ public class QuizController {
 
 	
     @RequestMapping(value = "/get-quiz", method = RequestMethod.GET)
-//    @PreAuthorize("hasAnyAuthority('ADMIN')")
+	@RolesAllowed("USER")
     @Operation(summary="Get all quiz questions ",responses = {
 			@ApiResponse(description = "Quiz Questions Successfully added",responseCode = "200",content = @Content(mediaType = "application/JSON",schema = @Schema(implementation = Question.class)))
 	})
