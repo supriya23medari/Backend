@@ -51,9 +51,9 @@ public class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter
       super.configure(http);
       http.authorizeRequests()
       .antMatchers("/api/quiz-id/*").permitAll()
-      .antMatchers("/api/get-quiz/*","/swagger-ui.html/*").hasAnyRole("user")
-      .antMatchers("/api/quiz/*","/api/quiz-del/*").hasAnyRole("admin")
-      .antMatchers("/api/quiz-category/*").hasAnyRole("user","admin")
+      .antMatchers("/api/get-quiz/","/swagger-ui.html/").hasAnyRole("USER")
+      .antMatchers("/api/quiz/*","/api/quiz-del/").hasAnyRole("ADMIN")
+      .antMatchers("/api/quiz-category/*").hasAnyRole("user","ADMIN")
       .anyRequest()
       .permitAll();
   http.csrf().disable();
