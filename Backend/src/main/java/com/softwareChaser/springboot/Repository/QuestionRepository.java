@@ -20,3 +20,4 @@ public interface QuestionRepository extends JpaRepository<Question,Long> {
 	public List<Question> findByDifficulty(String Difficulty);
 	
 }
+	 

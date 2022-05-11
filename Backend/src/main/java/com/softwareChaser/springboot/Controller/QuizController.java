@@ -2,7 +2,6 @@ package com.softwareChaser.springboot.Controller;
 
 import java.util.List;
 
-import javax.annotation.security.RolesAllowed;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,9 +32,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 
 
-@CrossOrigin(origins="http://localhost:3000/")
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "http://localhost:3000")
 public class QuizController {
 	
 	//slf4j logger
@@ -48,7 +47,6 @@ public class QuizController {
 
 //	@GetMapping(value="quiz-id/{id}")
     @RequestMapping(value = "/quiz-id/{id}", method = RequestMethod.GET)
-	@RolesAllowed("admin")
 	public ResponseEntity<Question> fetchByQid(@PathVariable("id") Long Qid) throws QuizNotFoundException
 	{
 	     
@@ -58,7 +56,6 @@ public class QuizController {
 	}
 	
 	//delete quiz question--admin role
-	@RolesAllowed("admin")
 	@DeleteMapping("/quiz-del/{id}")
 	@ApiResponse(description = "Quiz Questions Successfully deleted",responseCode = "200")
 	public String deleteQuestionById(@PathVariable("id") Long QId)
@@ -69,7 +66,6 @@ public class QuizController {
 	}
 	
 	//update quiz question--admin role
-	@RolesAllowed("admin")
 	@PutMapping("/quiz-update/{id}")
     @ApiResponse(description = "Quiz Questions id updated ",responseCode = "200")
 	public ResponseEntity<Question> updateQuizByQid(@PathVariable("id") Long Qid,@RequestBody Question question)
@@ -81,7 +77,6 @@ public class QuizController {
 	}
 	
 	//save quiz question--admin role
-	@RolesAllowed("admin")
     @RequestMapping(value = "/save-quiz", method = RequestMethod.POST)
     @ApiResponse(description = "Quiz Questions Successfully added",responseCode = "200")
 	public ResponseEntity<Question> SaveQuestions(@RequestBody Question question) {
@@ -92,7 +87,6 @@ public class QuizController {
 	
 
 	//get quiz queation all--user role
-	@RolesAllowed("user")
     @RequestMapping(value = "/get-quiz", method = RequestMethod.GET)
     @Operation(summary="Get all quiz questions ",responses = {
 			@ApiResponse(description = "Quiz Questions Successfully added",responseCode = "200",content = @Content(mediaType = "application/JSON",schema = @Schema(implementation = Question.class)))
@@ -106,7 +100,6 @@ public class QuizController {
 	
 	
 	//get quiz category -- user role
-	@RolesAllowed("user")
 	@GetMapping("quiz-category/{Category}")
 	public ResponseEntity<List<Question>> fetchByCategory(@PathVariable("Category") String Category) 
 	{
@@ -115,7 +108,6 @@ public class QuizController {
 	}	
 
 	//get quiz difficulty --user role
-	@RolesAllowed("user")
 	@GetMapping("quiz-difficulty/{Difficulty}")
 	public ResponseEntity<List<Question>> fetchByDifficulty(@PathVariable("Difficulty") String Difficulty)
 	{
@@ -124,7 +116,6 @@ public class QuizController {
 	}	
 	
 	// get quiz by category and difficulty -- user role
-	@RolesAllowed("user")
 	@GetMapping("quiz/CategoryAndDifficulty") 
 	public ResponseEntity<List<Question>> fetchByCategoryAndDifficulty(@RequestParam String Category,@RequestParam String Difficulty) 
 	{ 
@@ -134,7 +125,6 @@ public class QuizController {
 	}
 	
 	// get quiz by category and difficulty -- user role
-	@RolesAllowed("user")
 	@GetMapping(value = "/quiz/{Category}/difficulty/{Difficulty}")
 	public List<Question> fetchbyCategoryandDifficulty(@PathVariable String Category,@PathVariable String Difficulty){
 		
@@ -146,9 +136,10 @@ public class QuizController {
 		
 	}
 	// access denied  
-	   @GetMapping("/access-denied-response")
-	    public String accessDenied() {
-	        return "Access Denied... You don't have permission.";
-	    }
+    @GetMapping("/access-denied-response")
+	public String accessDenied() {
+	     return "Access Denied... You don't have permission.";
+	
+    }
 
 }
