@@ -1,3 +1,31 @@
 2022-05-11 14:44:08,606 [INFO] Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-05-11 14:44:08,615 [INFO] HikariPool-1 - Shutdown initiated...
 2022-05-11 14:44:08,621 [INFO] HikariPool-1 - Shutdown completed.
+2022-05-11 15:00:11,976 [INFO] Starting BackendApplication using Java 17.0.2 on INHYDUPGB1 with PID 1134299 (/home/localadmin/Documents/software_chasers/backend/Backend/Backend/target/classes started by localadmin in /home/localadmin/Documents/software_chasers/backend/Backend/Backend)
+2022-05-11 15:00:11,977 [INFO] No active profile set, falling back to 1 default profile: "default"
+2022-05-11 15:00:12,007 [INFO] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-11 15:00:12,007 [INFO] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-11 15:00:12,631 [INFO] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 15:00:12,733 [INFO] Finished Spring Data repository scanning in 97 ms. Found 1 JPA repository interfaces.
+2022-05-11 15:00:13,165 [INFO] Tomcat initialized with port(s): 8086 (http)
+2022-05-11 15:00:13,171 [INFO] Starting service [Tomcat]
+2022-05-11 15:00:13,172 [INFO] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-11 15:00:13,211 [INFO] Initializing Spring embedded WebApplicationContext
+2022-05-11 15:00:13,211 [INFO] Root WebApplicationContext: initialization completed in 1204 ms
+2022-05-11 15:00:13,384 [INFO] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 15:00:13,413 [INFO] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-11 15:00:13,519 [INFO] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-11 15:00:13,580 [INFO] HikariPool-1 - Starting...
+2022-05-11 15:00:13,775 [INFO] HikariPool-1 - Start completed.
+2022-05-11 15:00:13,785 [INFO] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-11 15:00:14,234 [INFO] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 15:00:14,241 [INFO] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 15:00:14,642 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-11 15:00:15,191 [INFO] LiveReload server is running on port 35729
+2022-05-11 15:00:15,194 [INFO] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-11 15:00:15,226 [INFO] Tomcat started on port(s): 8086 (http) with context path ''
+2022-05-11 15:00:15,240 [INFO] Started BackendApplication in 3.525 seconds (JVM running for 4.073)
+2022-05-11 15:00:17,707 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-11 15:00:17,707 [INFO] Initializing Servlet 'dispatcherServlet'
+2022-05-11 15:00:17,708 [INFO] Completed initialization in 1 ms
+2022-05-11 15:01:33,081 [INFO] Init duration for springdoc-openapi is: 149 ms
